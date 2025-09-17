@@ -1,0 +1,19 @@
+:root {
+
+      /*COLORS*/
+      --bg-color: #F8F8F8;
+      --menu-bg: #202020;
+      --white: #FFFFFF;
+      --black: #000000;
+      --highlight-yellow: #FFC257;
+      --medium-yellow: #FAEFDD;
+      --light-yellow: #FEFAEF;
+      --red: #CE0003;
+
+      /*FONT*/
+      --font-family: 'Instrument Sans', sans-serif;
+
+      /*BORDER*/
+      --box-shadow: ;
+      --border-radius: 2px;
+    }
