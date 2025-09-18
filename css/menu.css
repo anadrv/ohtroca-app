@@ -1,19 +1,23 @@
-
+nav {
+    margin-top: 100px;
+}
 
 .menu-container {
-  position: fixed;     
-  bottom: 0;           
-  left: 0;             
-  width: 100%;        
-background-color: var(--black);
-  display: flex;  
-  justify-content: center; 
-  gap: 70px; 
-  padding: 16px 0;     
-  z-index: 1000; 
-}       
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 16px 0;
+  z-index: 1000;
+}
 
 .menu-container a img {
-  width: 28px; 
+  width: 28px;
   height: auto;
 }
+
+
