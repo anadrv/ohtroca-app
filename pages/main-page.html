@@ -67,8 +67,13 @@
       cursor: pointer;
     }
 
-    .banner {
+    .secao {
       width: 90%;
+      margin: 0 auto;
+    }
+
+    .banner {
+      width: 100%;
       margin: 25px auto 20px auto;
     }
 
@@ -76,6 +81,27 @@
       width: 100%;
       border-radius: 12px;
       display: block;
+    }
+
+    .botoes-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 15px auto;
+      width: 100%;
+    }
+
+    .btn-preto {
+      background-color: var(--black);
+      color: var(--bg-color);
+      border: 2px solid var(--bg-color);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
     }
 
   </style>
@@ -90,10 +116,18 @@
   <div class="search-bar">
     <img src="/images/icons/search-icon-black.png" alt="ícone pesquisar" class="search-icon-black">
     <img src="/images/icons/filter-icon.png" alt="ícone filter" class="filter-icon-black">
+
   </div>
 
-  <div class="banner">
-    <img src="/images/general/home-img.png" alt = "Banner OhTroca">
+  <div class="secao">
+    <div class="banner">
+      <img src="/images/general/home-img.png" alt = "Banner OhTroca">
+    </div>
+
+    <div class="bottons-container">
+      <button class="btn-preto btn-menor">Adicionar item para trocar</button> 
+      <button class="btn-preto">Todos os itens</button>
+    </div>
   </div>
     
 </body>
