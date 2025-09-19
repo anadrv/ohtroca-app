@@ -23,6 +23,7 @@
 .header__btn {
     all: unset;
     padding-right: 4cqb;
+    cursor: pointer;
 }
 
 .header__profile {
