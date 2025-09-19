@@ -17,6 +17,6 @@
 
       /*BORDER*/
       --border: 2px solid black; 
-      --box-shadow: ;
+      --box-shadow: 1px 1px 0 black;;
       --border-radius: 10px;
     }
