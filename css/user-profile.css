@@ -139,7 +139,12 @@ body {
     height: 4px;
     margin-top: 6px;
     border-radius: 10px;
+    display: none;
 
+}
+
+.options-show__btn.active .line {
+  display: block;
 }
 
 
