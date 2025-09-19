@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <style>
     body {
       background-color: var(--bg-color);
@@ -148,25 +150,19 @@
     }
 
     .fav {
-      margin-top: 6px;
       border: none;
       background: transparent;
       cursor: pointer;
       padding: 0;
-      text-align: right;
-    }
-
-    .fav img {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
-      border: none;
+      font-size: 17px;
+      color: #555;
+      align-self: flex-start;
+      margin-top: -4px;
     }
 
     .info {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
       margin-top: 15px;
       margin-bottom: 20px;
     }
@@ -174,6 +170,8 @@
     .texto {
       display: flex;
       flex-direction: column;
+      align-self: flex-start;
+      margin-top: -5px;
     }
 
   </style>
@@ -214,7 +212,7 @@
                 <p>Disponível</p>
               </div>
                 <button class="fav">
-                <img src="/images/icons/heart-icon.png" alt="Icone de coração">
+                  <i class="fa-regular fa-heart"></i>
               </button>
           </div>
         </div>
