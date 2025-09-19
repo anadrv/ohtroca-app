@@ -12,7 +12,7 @@ body {
 /*COVER AND NAME*/
 
 
-.profile, .statistics, .options {
+.profile, .statistics, .options, .items {
     width: 90%;
     margin: 0 auto;
 }
@@ -114,4 +114,10 @@ body {
 .btn:hover {
     background-color: var(--black);
     color: var(--white);
+}
+
+/*ITEMS*/
+
+.items {
+    margin-top: 30px;
 }
