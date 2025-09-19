@@ -3,14 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página item</title>
+    <title>J-Hope BTS</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/header.css" />
   </head>
   <body>
+    <!--HEADER-->
+    <div id="header"></div>
+
+    <section class="item-detail">
+
+      <div class="item-detail__container">
+        <img src="/images/items/jhope-detail-img.png" alt="" class="item-detail__image">
+        <h1 class="item-detail__name">J-Hope - BTS</h1>
+        <p class="item-detail__description">Brinquedo BTS da coleção McDonald's 2025, original e em ótimo estado.</p>
+        <a href="#">Solicitar troca</a>
+      </div>
+
+      <div class="colector">
+        <img src="/images/general/jungsu-img.png" alt="">
+        <div class="colector-name">
+          <h2>Kim Jungsu</h2>
+          <p>Colecionador</p>
+        </div>
+        <div class="stars">
+          <p>5 <span><img src="" alt=""></span></p>
+        </div>
+      </div>
+
+    </section>
 
 
-    
+
     <!--MENU-->
     <div id="menu"></div>
     <script
@@ -22,7 +47,7 @@
       crossorigin
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
+    <script type="text/babel" src="../js/header.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
   </body>
 </html>
