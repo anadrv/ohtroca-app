@@ -1,0 +1,84 @@
+body{
+     background-color: #f8f0e3;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+
+}
+
+.inicio h1{
+    font-family: 'Instrument Sans', sans-serif;
+    white-space: nowrap;
+    color: red;
+    padding: 80px;
+    margin: 80px;
+    font-weight: bold;
+}
+
+.corpo img{
+    width: 150px;
+    height: auto;
+    margin-top: -90px;
+}
+
+
+.corpo{
+    position: relative; 
+   
+    display: inline-block; 
+    
+}
+
+.corpo h2{
+    position: absolute;
+    top:  -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fim p {
+    font-family:'Instrument Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+    padding: 40px;
+    margin-left: -80px;
+}
+
+.botao button{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Instrument Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 3px 0px black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 10px;
+
+}
+
+.botao {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  align-items: center; 
+  margin-top: -20px;
+}
+ 
+.botao .entrar{
+    background-color: black;
+    color: white;
+   border: 1px solid white;
+}
+
+.botao .criar{
+    background-color: #FFC257;
+    color: white;
+}
