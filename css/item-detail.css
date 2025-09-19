@@ -52,6 +52,7 @@ body {
 .collector {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--white);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -60,10 +61,15 @@ body {
     margin-top: 20px;
 }
 
+.collector-name {
+    margin-left: -24%;
+}
+
 .name {
     text-decoration: none;
     font-weight: bold;
     color: var(--black);
+
 }
 
 .name:hover {
@@ -74,12 +80,12 @@ body {
 .profile__img {
     border-radius: 50%;
     height: 60px;
-    border: var(--border);
+    border: var(--border-thin);
     margin-right: 20px;
 }
 
 .stars {
-    margin-left: 140px;
+
     color: var(--highlight-yellow);
     font-weight: bold;
     font-size: 1.2rem;
