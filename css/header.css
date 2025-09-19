@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+
+}
+
+.header__content {
+  padding-top: 30px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header__btn {
+    all: unset;
+    padding-right: 4cqb;
+}
+
+.header__profile {
+    border-radius: 50%;
+    border: var(--border);
+}
