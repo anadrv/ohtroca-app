@@ -155,7 +155,23 @@ button {
   font-size: 1.1rem;
 }
 
-/*REVIEWS*/
+section.items {
+  display: flex;
+  flex-direction: column; 
+}
+
+section.items .all {
+  align-self: flex-end;  
+  margin-top: 14px;     
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+section.items .all:hover {
+  color: var(--highlight-yellow);
+}
 
 .reviews {
     width: 90%;
