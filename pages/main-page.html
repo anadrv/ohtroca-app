@@ -123,7 +123,7 @@
     .card {
       border: 1px solid #555;
       border-radius: 12px;
-      padding: 10px;
+      padding: 12px;
       text-align: left;
       position: relative;
       background: var(--bg-color);
@@ -137,8 +137,8 @@
     }
 
     .card h3 {
-      font-size: 14px;
-      margin: 8px 0 2px;
+      font-size: 15px;
+      margin: 0 0 4px;
       color: #FFC257;
     }
 
@@ -154,9 +154,7 @@
       background: transparent;
       cursor: pointer;
       padding: 0;
-      display: block;
-      text-align: right;  
-      width: 100%;        
+      text-align: right;
     }
 
     .fav img {
@@ -164,6 +162,19 @@
       height: 20px;
       object-fit: contain;
       border: none;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .texto {
+      display: flex;
+      flex-direction: column;
     }
 
   </style>
@@ -197,11 +208,16 @@
       <div class="grid">
         <div class="card">
           <img src="/images/items/hello-kitty-img.png" alt="Hello Kitty">
-            <h3>Hello Kitty</h3>
-              <p>Disponível</p>
-            <button class="fav">
-              <img src="/images/icons/heart-icon.png" alt="Icone de coração">
-            </button>
+            
+          <div class="info">
+              <div class="texto"> 
+                <h3>Hello Kitty</h3>
+                <p>Disponível</p>
+              </div>
+                <button class="fav">
+                <img src="/images/icons/heart-icon.png" alt="Icone de coração">
+              </button>
+          </div>
         </div>
     </div>
   </div>
