@@ -1,10 +1,17 @@
-const buttons = document.querySelectorAll(".options-show__btn");
+const optionButtons = document.querySelectorAll(".options-show__btn");
 
-buttons.forEach(btn => {
+optionButtons.forEach(btn => {
   btn.addEventListener("click", () => {
-    // remove ativo de todos
-    buttons.forEach(b => b.classList.remove("active"));
-    // adiciona no clicado
+    optionButtons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
+
+    const target = btn.querySelector("button").textContent.trim();
+    if (target === "Avaliações") {
+      document.querySelector(".reviews").style.display = "block";
+      document.querySelector(".items").style.display = "none";
+    } else {
+      document.querySelector(".reviews").style.display = "none";
+      document.querySelector(".items").style.display = "block";
+    }
   });
 });
