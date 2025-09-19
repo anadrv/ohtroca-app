@@ -1,0 +1,72 @@
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aviso {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;               
+    background-color: #FFC257;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 220px;
+    border: solid 2px black;
+}
+
+.aviso img {
+    display: block;          
+    max-width: 100%;
+    height: auto;
+}
+
+.aviso p{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 15px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.sublinhado{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 1.5px; 
+   
+}
+
+.butao{
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.butao button{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Instrument Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 3px 0px black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.butao .continue{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
