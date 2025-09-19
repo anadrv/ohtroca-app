@@ -1,0 +1,92 @@
+body {
+      background-color: var(--bg-color);
+}
+
+.search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-color);
+      border: 2px solid #000;
+      border-radius: 40px;
+      padding: 10px 15px;
+      width: 100%; 
+      max-width: 330px; 
+      margin: 10px auto; 
+      margin-top: 20px;
+    }
+
+    .search-bar input {
+      border-radius: 40px;
+      outline: none;
+      flex: 1; 
+      padding: 10px;
+      font-size: 14px; /* nn sei se deixo 12 ou 14 dps vejo */
+    }
+
+    .search-bar img {
+      width: 20px; 
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 0.45fr);
+      gap: 15px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .card {
+      border: var(--border-thin);
+      border-radius: 12px;
+      padding: 12px;
+      text-align: left;
+      position: relative;
+      background: var(--white);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      border: var(--border-thin);
+
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin: 0 0 4px;
+      color: var( --highlight-yellow);
+    }
+
+    .card p {
+      font-size: 12px;
+      color:var(--black);
+      margin: 0;
+    }
+
+    .fav {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      font-size: 17px;
+      color: #555;
+      align-self: flex-start;
+      margin-top: -4px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .texto {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      margin-top: -5px;
+    }
