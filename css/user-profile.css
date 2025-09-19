@@ -13,7 +13,7 @@ body {
 
 
 .profile, .statistics, .options {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -68,14 +68,14 @@ body {
     border-radius: var(--border-radius);
     border: var(--border);
     text-align: center;
-    padding: 16px 20px;
+    padding: 16px 16px;
     box-shadow: var(--box-shadow);
 }
 
 /*OPTIONS*/
 
 .options {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -93,7 +93,7 @@ body {
 .btn {
     background-color: var(--highlight-yellow);
     width: 100%;
-    padding: 16px;
+    padding: 12px;
     border-radius: var(--border-radius);
     border: var(--border);
     box-shadow: var(--box-shadow);
