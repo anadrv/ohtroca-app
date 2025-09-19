@@ -182,10 +182,11 @@ section.items .all:hover {
 .reviews__card {
     display: flex;
     align-items: center;
-        border: var(--border);
-        border-radius: var(--border-radius);
-        margin: 20px 0;
-        box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
 
 }
 
@@ -200,10 +201,21 @@ section.items .all:hover {
 }
 
 .review__date-stars {
-    display: flex;
-    justify-content: space-between;
-    gap: 55px;
+  display: flex;
+  align-items: center; 
+  gap:69px;       
 }
+
+.review__date-stars .stars {
+  height: 20px;  
+  width: auto;  
+  object-fit: contain;
+}
+
+.review__date-stars p {
+  font-size: 0.7rem;
+}
+
 
 
 .profile__picture {
@@ -224,5 +236,21 @@ section.items .all:hover {
 h5 {
         font-size: 1rem;
 }
+
+.reviews-page {
+
+  margin-top: 14px;     
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.reviews-page:hover {
+
+  color: var(--highlight-yellow);
+}
+
+
 
 
