@@ -13,7 +13,7 @@ body {
       width: 100%; 
       max-width: 330px; 
       margin: 10px auto; 
-      margin-top: -80px;
+      margin-top: 20px;
     }
 
     .search-bar input {
