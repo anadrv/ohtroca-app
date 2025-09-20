@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="edit-profile.css">
+
+</head>
+<body>
+    <!-- Falta adicioan os ícones de editar + voltar -->
+
+    <!-- Perfil-->
+    <header class="banner">
+
+    <h2 class="title">Editar perfil</h2>
+
+    <!-- Perfil de cima-->
+    <div class="profile-small">
+        <img src="/images/general/perfil-ode-img.png" alt="Foto de Perfil que fica em cima">
+    </header>
+
+    <!-- Perfil para editar-->
+    <div class="profile-edit">
+        <img src="/images/general/ode-perfil.png" alt="Foto de perfil">
+    </div>
+
+        <!-- Formulário -->
+        <form class="profile-edit__form">
+        <label for="Nome"></label>
+        <input type="text" value="Oh Seungmin">
+
+        <label for="E-mail"></label>
+        <input type="email" value="samideo-ash@gmail.com">
+
+        <label for="Senha atual"></label>
+        <input type="password" placeholder="Senha atual">
+
+        <label for="Nova senha"></label>
+        <input type="password" placeholder="Nova senha">
+
+        <button type="submit">Confirmar</button>
+        </form>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu"></div>
+    
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
+    
+</body>
+</html>
