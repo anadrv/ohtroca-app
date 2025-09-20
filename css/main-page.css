@@ -176,14 +176,22 @@ body {
 }
 
 .filter-menu {
+  font-family: var(--font-family);
   display: none;
   position: absolute;
-  top: 30px; /* distância abaixo do ícone */
+  top: 35px; 
   right: 0;
   background: orange;
   padding: 10px;
   border-radius: 8px;
   z-index: 10;
+  
+  display: none;         
+  flex-wrap: wrap;       
+  gap: 8px;             
+  width: 200px;          
+  max-height: 250px;     
+  overflow-y: auto;  
 }
 
 .filter-container:hover .filter-menu {
