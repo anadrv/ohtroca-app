@@ -168,4 +168,32 @@ body {
     .texto a {
       text-decoration: none;
       color: inherit; 
-    } 
+    }
+    
+    .filter-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  top: 30px; /* distância abaixo do ícone */
+  right: 0;
+  background: orange;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.filter-container:hover .filter-menu {
+  display: block;
+}
+
+.filter-menu label {
+  display: block;
+  margin: 4px 0;
+}
+
+
+    
