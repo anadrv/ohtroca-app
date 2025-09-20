@@ -9,7 +9,7 @@ body {
     background-color: var(--bg-color);
 }
 
-#menu-desktop {
+#menu-desktop, #notifications-desktop, .title-page {
     display: none;
 }
 
@@ -74,13 +74,13 @@ h5 {
 
   body {
     display: flex;
-    gap: 50px; 
+    gap: 10px; 
     width: 90%;
     margin: 0 auto;       
   }
 
 
-  #header, #menu {
+  #header, #menu, .title-page {
     display: none;
   }
 
@@ -89,7 +89,8 @@ h5 {
     width: 24%;      
     flex-shrink: 0;   
     height: 100vh;
-            position: fixed;
+    position: fixed;
+    overflow-y: auto;
   }
 
   .reviews {
@@ -98,8 +99,19 @@ h5 {
 
   }
 
+ #notifications-desktop { 
+    display: block;
+    position: fixed;
+    right: 0;          
+    width: 24%;         
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+  .title-page {
+    display: block;
+    margin-top: 13%;
+  }
 
 
 }
-
-

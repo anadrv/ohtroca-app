@@ -6,9 +6,10 @@
     <title>Avaliações</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/reviews.css">
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css">
+    <link rel="stylesheet" href="/css/reviews.css">
     
 </head>
 <body>
@@ -22,6 +23,8 @@
 <!--REVIEWS-->
 
     <section class="reviews">
+
+        <h2 class="title-page">Avaliações</h2>
 
         <div class="reviews__card">
             <div class="img-name">
@@ -50,7 +53,7 @@
                     <p>2025-03-12 15:32</p>
                 </div>
                 <p class="review-text">
-                    Ótima troca! ! 
+                    Ótima troca!! 
                 </p>
             </div>
         </div>
@@ -105,10 +108,13 @@
 
     </section>
 
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
     <!--MENU-->
     <div id="menu"></div>
 
-    <!--SCRIPS-->
+    <!--SCRIPTS-->
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin
@@ -118,9 +124,10 @@
       crossorigin
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  
+
     <script type="text/babel" src="../js/header.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
     <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
 </body>
 </html>
