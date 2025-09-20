@@ -2,6 +2,11 @@ body {
       background-color: var(--bg-color);
 }
 
+#menu-desktop {
+    display: none;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
