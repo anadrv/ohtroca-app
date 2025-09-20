@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+nav {
+        background-color: var(--highlight-yellow);
+        
+    width: 24%;
+    height: 100vh;
+}
+
+.app-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.app-name h1 {
+    font-size: 1.6rem;
+}
+
+.app-name img {
+    margin-right: 30px;
+    padding: 32px 0;
+}
+
+.menu-container__name {
+    margin: 8px 32px 0 32px;
+    font-size: 1.2rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 32px;
+    background-color: var(--white);
+    padding: 10px 12px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.menu-container a:hover {
+
+    background-color: var(--medium-yellow);
+
+}
