@@ -2,14 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+
 }
 
-nav {
-        background-color: var(--highlight-yellow);
-        
-    width: 24%;
-    height: 100vh;
+body {
+        font-family: var(--font-family);
+
+
+}
+
+main {      
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--highlight-yellow);
+
 }
 
 .app-name {
@@ -33,13 +39,13 @@ nav {
     font-size: 1.2rem;
 }
 
-.menu-container {
+.menu-container-desktop {
     display: flex;
     flex-direction: column;
 
 }
 
-.menu-container a {
+.menu-container-desktop a {
     text-decoration: none;
     color: var(--black);
     display: flex;
@@ -53,7 +59,7 @@ nav {
     font-size: 0.9rem;
 }
 
-.menu-container a:hover {
+.menu-container-desktop a:hover {
 
     background-color: var(--medium-yellow);
 

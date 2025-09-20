@@ -9,7 +9,9 @@ body {
     background-color: var(--bg-color);
 }
 
-
+#menu-desktop {
+    display: none;
+}
 
 /*REVIEWS*/
 
@@ -43,7 +45,7 @@ body {
 .review__date-stars {
     display: flex;
     justify-content: space-between;
-    gap: 55px;
+    gap: 25px;
 }
 
 
@@ -65,3 +67,39 @@ body {
 h5 {
         font-size: 1rem;
 }
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+
+  body {
+    display: flex;
+    gap: 50px; 
+    width: 90%;
+    margin: 0 auto;       
+  }
+
+
+  #header, #menu {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;      
+    flex-shrink: 0;   
+    height: 100vh;
+            position: fixed;
+  }
+
+  .reviews {
+    margin-left: 30%;
+    width: 45%;
+
+  }
+
+
+
+}
+
+
