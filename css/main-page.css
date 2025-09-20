@@ -164,3 +164,8 @@ body {
       align-self: flex-start;
       margin-top: -5px;
     }
+
+    .texto a {
+      text-decoration: none;
+    color: inherit; 
+    } 
