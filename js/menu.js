@@ -1,6 +1,6 @@
 function Menu() {
   return (
-    <nav>
+    <nav className="nav-mobile">
       <div className="menu-container">
         <a href="./main-page.html"><img src="/images/icons/home-icon.png" alt="Home" /></a>
         <a href="./items-page.html"><img src="/images/icons/search-icon.png" alt="Buscar" /></a>

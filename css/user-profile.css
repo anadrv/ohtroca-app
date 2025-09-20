@@ -9,6 +9,10 @@ body {
     background-color: var(--bg-color);
 }
 
+#menu-desktop {
+    display: none;
+}
+
 /*COVER AND NAME*/
 
 
@@ -182,7 +186,7 @@ section.items .all:hover {
 .reviews__card {
     display: flex;
     align-items: center;
-    border: var(--border);
+        border: var(--border);
     border-radius: var(--border-radius);
     margin: 20px 0;
     box-shadow: var(--box-shadow);
@@ -251,6 +255,46 @@ h5 {
   color: var(--highlight-yellow);
 }
 
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+
+  body {
+    display: flex;
+    gap: 50px; 
+    width: 90%;
+    margin: 0 auto;       
+  }
+
+
+#menu {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;      
+    flex-shrink: 0;   
+    height: 100vh;
+            position: fixed;
+  }
+
+  .container {
+    margin-left: 30%;
+    width: 45%;
+
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+
+
+}
 
 
 
