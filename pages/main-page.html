@@ -7,14 +7,12 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/css/main-page.css">
   <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/menu-desktop.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 </head>
 <body>
+  <div id="menu-desktop"></div>
   
     <header>
         <img src="/images/general/ohtroca.png" alt="Logo OhTroca" class="logo">
@@ -168,9 +166,21 @@
         </div>    
     </div>
   </div>
-    <div id="menu"></div>
 
-    <script type="text/babel" src="/js/menu.js"></script>
-    <script type="text/babel" src="/js/main-page.js"></script>
+    <!--MENU-->
+    <div id="menu"></div>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script src="../js/main-page.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
 </body>
 </html>
