@@ -1,5 +1,6 @@
 body{
     background-color: #f8f0e3;
+    
 }
 
 .cabeçalho header{
@@ -10,32 +11,29 @@ body{
     border-bottom: 1px solid #f8f0e3;
 
 }
-
-.bem-vindo {
+.campos .titulo{
+    margin-right: auto;
+    margin-left: -10px;
+}
+.campos{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
-}
-
-.login{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #F8F8F8;            
+    padding: 20px;                    
+    border-radius: 12px;               
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+    width: 320px;                     
+    margin: 40px auto;
+    border: solid 2px black;
 }
-
-.login h1{
-    margin-left: -220px;
-    margin-top: -40px;
-}
-
 #formulario {
     display: flex;
     flex-direction: column; 
     gap: 15px;              
-    width: 300px;           
+    width: 300px; 
+    margin-left: -30px;          
 }
 
 #formulario input {
@@ -43,7 +41,9 @@ body{
     font-size: 16px;       
     border: 1px solid #ccc; 
     border-radius: 8px;     
-    width: 100%;           
+    width: 100%;   
+      
+       
 }
 
 #formulario button {
@@ -60,24 +60,18 @@ body{
     margin-top: 10px;
 }
 
-
-#formulario .entrar {
+#formulario .confirmar {
     background-color: #FFC257;
     border: 1px solid black;
 }
 
-.perguntas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#formulario {
+  display: flex;
+  flex-direction: column;
 }
 
-.perguntas .esqueceu{
-    margin-left: 30px;
-    margin-top: 15px;
-}
 
-.perguntas .criar{
-    margin-left: 30px;
+.campos .pergunta{
+    margin-left: 12px;
+    margin-top: 20px;
 }
