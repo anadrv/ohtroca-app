@@ -97,3 +97,31 @@ body {
       color: inherit; 
     } 
 
+      .filter-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-menu {
+  font-family: var(--font-family);
+  display: none;       
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: orange;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 10;
+
+  display: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.filter-menu.active {
+  display: flex;          
+}
+
