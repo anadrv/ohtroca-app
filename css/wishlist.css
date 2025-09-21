@@ -1,5 +1,12 @@
 body {
-      background-color: var(--bg-color);
+  background-color: var(--bg-color);
+  display: block;
+}
+
+#menu-desktop,
+.home-img-desktop,
+#notifications-desktop {
+  display: none;
 }
 
 .grid {
@@ -63,3 +70,52 @@ body {
       align-self: flex-start;
       margin-top: -5px;
     }
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #menu,
+  .home-img,
+  .bottons-container,
+  header {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .main-container {
+    margin-left: 30%;
+    width: 45%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #notifications-desktop {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 24%;
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+  .home-img-desktop {
+    width: 100%;
+    display: block;
+  }
+}
