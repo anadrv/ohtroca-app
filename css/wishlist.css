@@ -71,6 +71,20 @@ body {
       margin-top: -5px;
     }
 
+    /* MOBILE */
+    .title-page {
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .title-page {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
+
 /* DESKTOP */
 @media (min-width: 1024px) {
   body {
@@ -118,6 +132,13 @@ body {
     width: 100%;
     display: block;
   }
+
+  .title-page {
+    display: block;
+    margin-left: 10px;
+  }
+
+
 
   
 }
