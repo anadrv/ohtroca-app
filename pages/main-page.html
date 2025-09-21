@@ -1,174 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css/main-page.css">
-  <link rel="stylesheet" href="/css/menu.css"/>
-  <link rel="stylesheet" href="/css/menu-desktop.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+    <link rel="stylesheet" href="/css/main-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="menu-desktop"></div>
 
-</head>
-<body>
-  <div id="menu-desktop"></div>
-  
     <header>
-        <img src="/images/general/ohtroca.png" alt="Logo OhTroca" class="logo">
-        <h1 class="titulo">OhTroca</h1>
-        <img src="/images/general/perfil-ode-img.png" alt="Foto de perfil" class="perfil">
+      <img src="/images/general/ohtroca.png" alt="Logo OhTroca" class="logo" />
+      <h1 class="titulo">OhTroca</h1>
+      <img
+        src="/images/general/perfil-ode-img.png"
+        alt="Foto de perfil"
+        class="perfil"
+      />
     </header>
 
-  <div class="search-bar">
-  <img src="/images/icons/search-icon-black.png" alt="ícone pesquisar" class="search-icon-black">
+    <div class="main-container">
+      <div class="search-bar">
+        <img
+          src="/images/icons/search-icon-black.png"
+          alt="ícone pesquisar"
+          class="search-icon-black"
+        />
+        <div class="filter-container">
+          <img
+            src="/images/icons/filter-icon.png"
+            alt="ícone filter"
+            class="filter-icon-black"
+            id="filter-btn"
+          />
+          <div class="filter-menu">
+            <label><input type="checkbox" /> Usados</label>
+            <label><input type="checkbox" /> Novo</label>
+            <label><input type="checkbox" /> Favoritos</label>
+            <label><input type="checkbox" /> Squishmallows</label>
+            <label><input type="checkbox" /> Hello Kitty</label>
+            <label><input type="checkbox" /> Minecraft</label>
+            <label><input type="checkbox" /> BTS</label>
+            <label><input type="checkbox" /> O incrível mundo de Gumball</label>
+            <label><input type="checkbox" /> Pokémon</label>
+            <label><input type="checkbox" /> Disney</label>
+          </div>
+        </div>
+      </div>
+      <div class="secao">
+        <div class="banner">
+          <img
+            src="/images/general/home-img.png"
+            alt="Banner OhTroca"
+            class="home-img"
+          />
+          <img
+            src="/images/general/home-img-desktop.png"
+            alt="Banner OhTroca"
+            class="home-img-desktop"
+          />
+        </div>
+        <div class="bottons-container">
+          <button
+            class="btn-preto btn-menor"
+            onclick="window.location.href='/pages/add-item.html'"
+          >
+            Adicionar item para trocar
+          </button>
+          <button
+            class="btn-preto"
+            onclick="window.location.href='/pages/items-page.html'"
+          >
+            Todos os itens
+          </button>
+        </div>
+      </div>
+      <div class="destaques">
+        <h2>Destaques</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="/images/items/hello-kitty-img.png" alt="Hello Kitty" />
 
-  <div class="filter-container">
-    <img src="/images/icons/filter-icon.png" alt="ícone filter" class="filter-icon-black" id="filter-btn">
-
-    <div class="filter-menu">
-      <label><input type="checkbox"> Usados</label>
-      <label><input type="checkbox"> Novo</label>
-      <label><input type="checkbox"> Favoritos</label>
-      <label><input type="checkbox"> Squishmallows</label>
-      <label><input type="checkbox"> Hello Kitty</label>
-      <label><input type="checkbox"> Minecraft</label>
-      <label><input type="checkbox"> BTS</label>
-      <label><input type="checkbox"> O incrível mundo de Gumball</label>
-      <label><input type="checkbox"> Pokémon</label>
-      <label><input type="checkbox"> Disney</label>
-    </div>
-  </div>
-</div>
-
-
-  <div class="secao"> 
-    <div class="banner">
-      <img src="/images/general/home-img.png" alt = "Banner OhTroca">
-    </div>
-
-    <div class="bottons-container">
-      <button class="btn-preto btn-menor" onclick="window.location.href='/pages/add-item.html'">Adicionar item para trocar</button> 
-      <button class="btn-preto" onclick="window.location.href='/pages/items-page.html'">Todos os itens</button>
-    </div>
-  </div>
-
-  <div class="destaques">
-    <h2>Destaques</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="/images/items/hello-kitty-img.png" alt="Hello Kitty">
-            
-          <div class="info">
-              <div class="texto"> 
+            <div class="info">
+              <div class="texto">
                 <h3>Hello Kitty</h3>
                 <p>Disponível</p>
               </div>
-                <button class="fav">
-                  <i class="fa-regular fa-heart"></i>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
               </button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/items/bee-img.png" alt="Foto da abelha do mine">
-          <div class="info">
-            <div class="texto">
-              <h3>Abelha</h3>
-              <p>Disponível</p>
             </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
           </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/items/teste-jhope.png" alt="Jhope do BTS !!">
-          <div class="info">
-            <div class="texto">
-              <h3><a href="/pages/item-detail.html">J-Hope - BTS</a></h3>
-              <p>Disponível</p>
-            </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/items/suga-img.png" alt="Boneco do Suga do BTS">
-          <div class="info">
-            <div class="texto">
-              <h3>SUGA - BTS</h3>
-              <p>Disponível</p>
-            </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-        </div>    
-    </div>
-    <div class="colecao">
-    <h2>Coleção Hello Kitty</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="/images/items/hello-kitty-img.png" alt="Hello Kitty">
-            
-          <div class="info">
-              <div class="texto"> 
-                <h3>Hello Kitty</h3>
+          <div class="card">
+            <img src="/images/items/bee-img.png" alt="Foto da abelha do mine" />
+            <div class="info">
+              <div class="texto">
+                <h3>Abelha</h3>
                 <p>Disponível</p>
               </div>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/items/teste-jhope.png" alt="Jhope do BTS !!" />
+            <div class="info">
+              <div class="texto">
+                <h3><a href="/pages/item-detail.html">J-Hope - BTS</a></h3>
+                <p>Disponível</p>
+              </div>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/items/suga-img.png" alt="Boneco do Suga do BTS" />
+            <div class="info">
+              <div class="texto">
+                <h3>SUGA - BTS</h3>
+                <p>Disponível</p>
+              </div>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="colecao">
+          <h2>Coleção Hello Kitty</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="/images/items/hello-kitty-img.png" alt="Hello Kitty" />
+
+              <div class="info">
+                <div class="texto">
+                  <h3>Hello Kitty</h3>
+                  <p>Disponível</p>
+                </div>
                 <button class="fav">
                   <i class="fa-regular fa-heart"></i>
-              </button>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/images/items/hello-kitty-strawberry.png"
+                alt="Hello Kitty"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Moranguinho</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/images/items/hello-kitty-bailarina.png"
+                alt="Hello Kitty"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Bailarina</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/items/hello-kitty-abelha.png"
+                alt="Hello Kitty"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Abelhinha</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <img src="/images/items/hello-kitty-strawberry.png" alt="Hello Kitty">
-          <div class="info">
-            <div class="texto">
-              <h3>Moranguinho</h3>
-              <p>Disponível</p>
-            </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/items/hello-kitty-bailarina.png" alt="Hello Kitty">
-          <div class="info">
-            <div class="texto">
-              <h3>Bailarina</h3>
-              <p>Disponível</p>
-            </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/items/hello-kitty-abelha.png" alt="Hello Kitty">
-          <div class="info">
-            <div class="texto">
-              <h3>Abelhinha</h3>
-              <p>Disponível</p>
-            </div>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-        </div>    
+      </div>
     </div>
-  </div>
+
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
 
     <!--MENU-->
     <div id="menu"></div>
+
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin
@@ -182,5 +222,6 @@
     <script type="text/babel" src="../js/menu.js"></script>
     <script src="../js/main-page.js"></script>
     <script type="text/babel" src="../js/menu-desktop.js"></script>
-</body>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+  </body>
 </html>
