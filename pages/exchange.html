@@ -1,55 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Troca</title>
-</head>
-<body>
-    <main class="exchange">
-        <section class="exchange-items">
-            <h2 class="exchange-items__question">
-                Por qual dos itens gostaria de trocar?
-            </h2>
-            <div class="exchange-items__options">
-        </section>
 
-        <section class="condition">
-            <h2 class="exchange-items__question">
-                Condição do item
-            </h2>
-            
-            <div class="question">
-                <input type="checkbox">
-                <label for="checkbox">Novo</label>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/main-page.css" />
+    <link rel="stylesheet" href="/css/exchange.css" />
+  </head>
+
+  <body>
+
+    <!--HEADER-->
+    <div id="header"></div>
+
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
+
+    <div class="exchange">
+      <section class="exchange-items">
+        <h2 class="title-page">Troca</h2>
+        <h3 class="exchange-items__question">
+          Por qual dos itens gostaria de trocar?
+        </h3>
+        <div class="exchange-items__options">
+          <div class="grid">
+            <div class="card">
+              <img
+                src="/images/items/bee-img.png"
+                alt="Foto da abelha do mine"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Abelha</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <input type="checkbox" />
+                </button>
+              </div>
             </div>
 
-            <div class="question">
-                <input type="checkbox">
-                <label for="checkbox">Usado</label>
+            <div class="card">
+              <img src="/images/items/teste-jhope.png" alt="Jhope do BTS !!" />
+              <div class="info">
+                <div class="texto">
+                  <h3><a href="/pages/item-detail.html">J-Hope - BTS</a></h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <input type="checkbox" />
+                </button>
+              </div>
             </div>
-
-        </section>
-
-        <section class="method">
-            <h2 class="exchange-items__question">
-                Forma de troca
-            </h2>
-            
-            <div class="question">
-                <input type="checkbox">
-                <label for="checkbox">Presencial</label>
-            </div>
-
-            <div class="question">
-                <input type="checkbox">
-                <label for="checkbox">Envio</label>
-            </div>
-
-        </section>
-
+          </div>
         </div>
-    </main>
-    
-</body>
+      </section>
+
+      <section class="condition">
+        <h2 class="exchange-items__question">Condição do item</h2>
+
+        <div class="question-container">
+          <div class="question">
+            <input type="checkbox" />
+            <label for="checkbox">Novo</label>
+          </div>
+          <div class="question">
+            <input type="checkbox" />
+            <label for="checkbox">Usado</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="method">
+        <h2 class="exchange-items__question">Forma de troca</h2>
+
+        <div class="question-container">
+          <div class="question">
+            <input type="checkbox" />
+            <label for="checkbox">Presencial</label>
+          </div>
+          <div class="question">
+            <input type="checkbox" />
+            <label for="checkbox">Envio</label>
+          </div>
+        </div>
+      </section>
+
+      <button class="btn-exchange">Solicitar troca</button>
+    </div>
+
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
+    <!--MENU-->
+    <div id="menu"></div>
+
+    <!--REACT-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--SCRIPTS-->
+    <script type="text/babel" src="../js/header.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+    <script src="../exchange.js"></script>
+
+  </body>
 </html>
