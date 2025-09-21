@@ -1,159 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 body {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
-#menu-desktop {
-    display: none;
+#menu-desktop,
+#notifications-desktop {
+  display: none;
 }
 
 /*COVER AND NAME*/
 
-
-.profile, .statistics, .options, .items {
-    width: 90%;
-    margin: 0 auto;
+.profile,
+.statistics,
+.options,
+.items {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .profile__cover {
-    background-color: #8EABC3;
-    width: 100%;
-    height: 120px;
-    z-index: 0;
+  background-color: #8eabc3;
+  width: 100%;
+  height: 120px;
+  z-index: 0;
 }
 
 .profile__picture-name {
-    display: flex;
-    align-items: end;
-    gap: 16px;
-    z-index: 1;
-    margin-top: -40px;
-
+  display: flex;
+  align-items: end;
+  gap: 16px;
+  z-index: 1;
+  margin-top: -40px;
 }
 
 .profile__picture-name h1 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .profile__picture-name p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .profile__picture-name img {
-    border-radius: 10px;
-    border: var(--border);
+  border-radius: 10px;
+  border: var(--border);
 }
 
 /*STATISTICS*/
 
 .statistics {
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .statistics p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .statistics h4 {
-    font-size: 1.2rem;
-    color: var(--highlight-yellow);
+  font-size: 1.2rem;
+  color: var(--highlight-yellow);
 }
 
-.exchanges, .reviews-stats, .responses  {
-    background-color: var(--white);
-    border-radius: var(--border-radius);
-    border: var(--border);
-    text-align: center;
-    padding: 16px 16px;
-    box-shadow: var(--box-shadow);
+.exchanges,
+.reviews-stats,
+.responses {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  text-align: center;
+  padding: 5% 4%;
+  box-shadow: var(--box-shadow);
 }
 
 /*OPTIONS*/
 
 .options {
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.options a{
-    text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
+.options a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
 }
 
 .btn {
-    background-color: var(--highlight-yellow);
-    width: 100%;
-    padding: 12px;
-    border-radius: var(--border-radius);
-    border: var(--border);
-    box-shadow: var(--box-shadow);
+  background-color: var(--highlight-yellow);
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
 
 .btn-inventory {
-    background-color: var(--light-yellow);
-} 
+  background-color: var(--light-yellow);
+}
 
 .btn-list {
-    background-color: var(--medium-yellow);
-} 
+  background-color: var(--medium-yellow);
+}
 
 .btn-chat {
-    background-color: var(--highlight-yellow);
-} 
+  background-color: var(--highlight-yellow);
+}
 
 .btn:hover {
-    background-color: var(--black);
-    color: var(--white);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /*ITEMS AND REVIEWS*/
 
 .options-show {
-    width: 90%;
-    display: flex;
-   margin:30px 0 30px 30px;
-    justify-content: space-evenly;
-    gap: 100px;
-
+  width: 90%;
+  display: flex;
+  margin: 30px 0 30px 30px;
+  justify-content: space-evenly;
+  gap: 100px;
 }
 
 .options-show__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .line {
-    background-color: var(--red);
-    width: 50px;
-    height: 4px;
-    margin-top: 6px;
-    border-radius: 10px;
-    display: none;
-
+  background-color: var(--red);
+  width: 50px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 10px;
+  display: none;
 }
 
 .options-show__btn.active .line {
   display: block;
 }
 
-
 button {
-    all: unset;       
+  all: unset;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.1rem;
@@ -161,12 +162,12 @@ button {
 
 section.items {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 section.items .all {
-  align-self: flex-end;  
-  margin-top: 14px;     
+  align-self: flex-end;
+  margin-top: 14px;
   color: var(--black);
   font-weight: bold;
   font-size: 1.1rem;
@@ -178,41 +179,39 @@ section.items .all:hover {
 }
 
 .reviews {
-    width: 90%;
-    margin: 0 auto;
-    display: none;
+  width: 90%;
+  margin: 0 auto;
+  display: none;
 }
 
 .reviews__card {
-    display: flex;
-    align-items: center;
-        border: var(--border);
-    border-radius: var(--border-radius);
-    margin: 20px 0;
-    box-shadow: var(--box-shadow);
-    background-color: var(--white);
-
+  display: flex;
+  align-items: center;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  margin: 20px 0;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
 }
 
 .review {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px 28px;
-    font-size: 0.8rem;
-
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 28px;
+  font-size: 0.8rem;
 }
 
 .review__date-stars {
   display: flex;
-  align-items: center; 
-  gap:69px;       
+  align-items: center;
+  gap: 69px;
 }
 
 .review__date-stars .stars {
-  height: 20px;  
-  width: auto;  
+  height: 20px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -220,30 +219,26 @@ section.items .all:hover {
   font-size: 0.7rem;
 }
 
-
-
 .profile__picture {
-    border-radius: 50%;
-    border: var(--border);
-    width: 60px;
+  border-radius: 50%;
+  border: var(--border);
+  width: 60px;
 }
 
 .img-name {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding: 20px 0 20px 20px;
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 20px 0 20px 20px;
 }
 
 h5 {
-        font-size: 1rem;
+  font-size: 1rem;
 }
 
 .reviews-page {
-
-  margin-top: 14px;     
+  margin-top: 14px;
   color: var(--black);
   font-weight: bold;
   font-size: 1.1rem;
@@ -251,38 +246,33 @@ h5 {
 }
 
 .reviews-page:hover {
-
   color: var(--highlight-yellow);
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-
-
   body {
     display: flex;
-    gap: 50px; 
+    gap: 50px;
     width: 90%;
-    margin: 0 auto;       
+    margin: 0 auto;
   }
 
-
-#menu {
+  #menu {
     display: none;
   }
 
   #menu-desktop {
     display: block;
-    width: 24%;      
-    flex-shrink: 0;   
+    width: 24%;
+    flex-shrink: 0;
     height: 100vh;
-            position: fixed;
+    position: fixed;
   }
 
   .container {
     margin-left: 30%;
     width: 45%;
-
   }
 
   .grid {
@@ -290,11 +280,48 @@ h5 {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  #notifications-desktop {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 24%;
+    height: 100vh;
+    margin-right: 20px;
+  }
 
+  .title-page {
+    display: block;
+    margin-top: 13%;
+  }
 
+  .profile__cover {
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
 
+  .exchanges,
+  .reviews-stats,
+  .responses {
+    padding: 3% 6%;
+  }
 
+  section.items {
+    text-align: right;
+  }
+
+  section.items .all {
+    display: inline-block;
+    margin: 20px 0;
+    right: 0;
+  }
+
+  section.reviews {
+    text-align: right;
+  }
+
+  section.reviews .reviews-page {
+    display: inline-block;
+    margin: 20px 0;
+    right: 0;
+  }
 }
-
-
-

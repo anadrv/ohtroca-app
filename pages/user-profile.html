@@ -6,20 +6,20 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/menu.css" />
- 
     <link rel="stylesheet" href="/css/main-page.css" />
-       <link rel="stylesheet" href="/css/user-profile.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
     <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/user-profile.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
 
-
   <body>
-
+    <!--MENU DESKTOP-->
     <div id="menu-desktop"></div>
+
     <!--PROFILE-->
     <div class="container">
       <div class="profile__cover"></div>
@@ -61,6 +61,7 @@
           <div class="line"></div>
         </div>
       </section>
+
       <!--CARDS ITEMS-->
       <section class="items active">
         <div class="grid">
@@ -89,7 +90,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="/images/items/loki-moana-img.png" alt="Moana e seu amigo" />
+            <img
+              src="/images/items/loki-moana-img.png"
+              alt="Moana e seu amigo"
+            />
             <div class="info">
               <div class="texto">
                 <h3>Moana & Loki</h3>
@@ -101,10 +105,10 @@
             </div>
           </div>
           <div class="card">
-              <img src="/images/items/teste-jhope.png" alt="Jhope do BTS !!">
+            <img src="/images/items/teste-jhope.png" alt="Jhope do BTS !!" />
             <div class="info">
               <div class="texto">
-                  <h3><a href="/pages/item-detail.html">J-Hope - BTS</a></h3>
+                <h3><a href="/pages/item-detail.html">J-Hope - BTS</a></h3>
                 <p>Disponível</p>
               </div>
               <button class="fav">
@@ -115,6 +119,7 @@
         </div>
         <a href="./items-page.html" class="all">Ver tudo</a>
       </section>
+
       <!--REVIEWS-->
       <section class="reviews">
         <div class="reviews__card">
@@ -159,8 +164,13 @@
       </section>
     </div>
 
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
     <!--MENU-->
     <div id="menu"></div>
+
+    <!--REACT-->
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin
@@ -171,8 +181,10 @@
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+    <!--SCRIPTS-->
     <script type="text/babel" src="../js/menu.js"></script>
     <script src="../js/user-profile.js"></script>
     <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
   </body>
 </html>
