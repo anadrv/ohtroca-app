@@ -8,39 +8,46 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/edit-profile.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <!-- Falta adicioar os ícones de editar + voltar + mudar algumas coisas -->
 
-    <!-- Perfil-->
-    <header class="banner">
+    <div class="container">
+        <div class="profile-header">
+            <button class="btn-back">
+                <img src="/images/icons/arrow-left.png" alt="Voltar">
+            </button>
+            <h2>Editar perfil</h2>
+            <img src="/images/general/perfil-ode-img.png" alt="Foto de perfil do usuário">
+        </div>
+  </div>
 
-    <h2 class="title">Editar perfil</h2>
-
-    <!-- Perfil de cima-->
-    <div class="profile-small">
-        <img src="/images/general/perfil-ode-img.png" alt="Foto de Perfil que fica em cima">
-    </header>
-
-    <!-- Perfil para editar-->
-    <div class="profile-edit">
-        <img src="/images/general/ode-perfil.png" alt="Foto de perfil">
+    <!-- Edit profile -->
+     <div class="profile-photo">
+        <div class="cover-photo">
+            <button class="edit-cover-btn"><i class="fa-solid fa-pen"></i></button>
     </div>
 
-        <!-- Formulário -->
+    <div class="profile-pic">
+      <img src="/images/general/ode-perfil.png" alt="Foto de perfil" class="Foto de perfil do usuário para editar">
+      <button class="edit-profile-btn"><i class="fa-solid fa-pen"></i></button>
+    </div>
+  </div>
+
+        <!-- Forms -->
         <form class="profile-edit__form">
-        <label for="Nome"></label>
+        <label for="nome">Nome</label>
         <input type="text" value="Oh Seungmin">
 
-        <label for="E-mail"></label>
+        <label for="email">E-mail</label>
         <input type="email" value="samideo-ash@gmail.com">
 
-        <label for="Senha atual"></label>
-        <input type="password" placeholder="Senha atual">
+        <label for="current-password">Senha atual</label>
+        <input type="password" id="current-password">
 
-        <label for="Nova senha"></label>
-        <input type="password" placeholder="Nova senha">
+        <label for="new-password">Nova senha</label>
+        <input type="password" id="new-password">
 
         <button type="submit">Confirmar</button>
         </form>
