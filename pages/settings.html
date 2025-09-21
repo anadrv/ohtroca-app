@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!--Esse é facil, faço amanha-->
+
+    <div class="container">
+        <button class="btn-back"><i class="fa-solid fa-arrow-left"></i></button>
+
+        <h2 class="title">Configurações</h2>
+
+        <div class="profile__picture">
+            <img src="/images/general/perfil-ode-img.png" alt="Imagem de perfil do usuário">
+        </div>
+    </div>
+
+    <!--Menu options-->
+    <div class="options-menu">
+        <a href="/pages/edit-profile.html">
+            <button class="menu-item">
+                <span>Editar perfil</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="/pages/notifications.html">
+            <button class="menu-item">
+                <span>Notificações</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="">
+            <button class="menu-item">
+                <span>Impulsionar item</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="">
+            <button class="menu-item">
+                <span>Histórico de trocas</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="">
+            <button class="menu-item">
+                <span>Política de privacidade</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="/pages/termos.html">
+            <button class="menu-item">
+                <span>Termos de uso</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="">
+            <button class="menu-item">
+                <span>Log out</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+        <a href="/pages/delete-account.html">
+            <button class="menu-item">
+                <span>Excluir conta</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </a>
+
+    </div>
+
+    <!-- Menu -->
+    <div id="menu"></div>
+    
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
 </body>
 </html>
