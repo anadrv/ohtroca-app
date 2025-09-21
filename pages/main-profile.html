@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil pessoal</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="main-profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <!--Esse da pra reaproveitar o outro-->
+
+    <div class="container">
+      <div class="profile__cover"></div>
+      <section class="profile">
+        <div class="profile__picture-name">
+          <img src="/images/general/ode-perfil.png" alt="Foto de perfil do usuário" />
+          <div class="profile__name">
+            <h1>Oh Seungmin</h1>
+            <p>Campina Grande - PB</p>
+          </div>
+          <button class="btn-troca">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+          <button class="btn-configs">
+          <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <div class="exchanges">
+          <h4>02</h4>
+          <p>Trocas realizadas</p>
+        </div>
+        <div class="reviews-stats">
+          <h4>5.0</h4>
+          <p>Avaliação</p>
+        </div>
+        <div class="responses">
+          <h4>95%</h4>
+          <p>Taxa de resposta</p>
+        </div>
+      </section>
+
+      <section class="options">
+        <a href="/pages/inventory.html" class="btn btn-inventory">Inventário</a>
+        <a href="/pages/chat.html" class="btn btn-chat">CHAT</a>
+        <a href="favorites.html" class="btn btn-favorites">Favoritos</a>
+        <a href="/pages/wishlist.html" class="btn btn-list">Minha lista de desejos</a>
+
+      </section>
+      <section class="options-show">
+        <div class="options-show__btn active">
+          <button class="btn-options">Meus itens</button>
+          <div class="line"></div>
+        </div>
+        <div class="options-show__btn">
+          <button class="btn-options">Avaliações</button>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <!--Meus itens-->
+      <section class="items active">
+        <div class="grid">
+          <div class="card">
+            <img src="/images/items/suga-img.png" alt="Suga - Bts edição especial" />
+            <div class="info">
+              <div class="texto">
+                <h3>Suga - Bts</h3>
+                <p>Disponível</p>
+              </div>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/items/pikachu-img.png" alt="Pikachu marinheiro" />
+            <div class="info">
+              <div class="texto">
+                <h3>Pikachu</h3>
+                <p>Disponível</p>
+              </div>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Revies-->
+      <section class="reviews">
+        <div class="reviews__card">
+          <div class="img-name">
+            <img
+              src="/images/general/ryujin.png"
+              alt="Foto de perfil - Ash"
+              class="profile__picture"
+            />
+            <h5>Ash</h5>
+          </div>
+          <div class="review">
+            <div class="review__date-stars">
+              <img src="/images/icons/stars.png" alt="" />
+              <p>2025-12-06 20:21</p>
+            </div>
+            <p class="review-text">
+              O brinquedo chegou em ótimas condições, exatamente como combinado. A comunicação com o Seungmin foi rápida e muito tranquila, conseguimos alinhar tudo de forma simples e sem imprevistos.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__card">
+          <div class="img-name">
+            <img
+              src="/images/general/perfil-junhan-img.png"
+              alt="Foto de perfil - Kwak Jiseok"
+              class="profile__picture"
+            />
+            <h5>Junhan</h5>
+          </div>
+          <div class="review">
+            <div class="review__date-stars">
+              <img src="/images/icons/stars.png" alt="" />
+              <p>2025-06-03 15:12</p>
+            </div>
+            <p class="review-text">Troca perfeita! Brinquedo em ótimo estado e comunicação rápida.</p>
+          </div>
+        </div>
+    </div>
+
+    <button class="btn-add">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+
+    <!-- Menu -->
+    <div id="menu"></div>
+    
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
 </body>
 </html>
