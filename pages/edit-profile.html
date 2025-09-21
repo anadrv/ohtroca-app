@@ -6,6 +6,7 @@
     <title>Editar perfil</title>
 
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/edit-profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -13,27 +14,20 @@
 
 <body>
 
-    <div class="container">
-        <div class="profile-header">
-            <button class="btn-back">
-                <img src="/images/icons/arrow-left.png" alt="Voltar">
-            </button>
-            <h2>Editar perfil</h2>
-            <img src="/images/general/perfil-ode-img.png" alt="Foto de perfil do usuário">
-        </div>
-  </div>
+  <div id="header"></div>
 
     <!-- Edit profile -->
      <div class="profile-photo">
         <div class="cover-photo">
             <button class="edit-cover-btn"><i class="fa-solid fa-pen"></i></button>
+      </div>
     </div>
 
     <div class="profile-pic">
-      <img src="/images/general/ode-perfil.png" alt="Foto de perfil" class="Foto de perfil do usuário para editar">
+      <img src="/images/general/ode-perfil.png" alt="Foto de perfil">
       <button class="edit-profile-btn"><i class="fa-solid fa-pen"></i></button>
     </div>
-  </div>
+
 
         <!-- Forms -->
         <form class="profile-edit__form">
@@ -49,7 +43,7 @@
         <label for="new-password">Nova senha</label>
         <input type="password" id="new-password">
 
-        <button type="submit">Confirmar</button>
+        <button type="submit" class="submit">Confirmar</button>
         </form>
     </div>
 
@@ -66,6 +60,7 @@
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/header.js"></script>
     
 </body>
 </html>
