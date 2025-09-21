@@ -9,4 +9,45 @@ body {
     background-color: var(--bg-color);
 }
 
-/* Não sei fazer isso */
+.cover-photo{
+    background-color: #BC13C5;
+    height: 120px;
+    width: 100%;
+    z-index: 0;
+}
+
+.edit-cover-btn{
+    text-align: end;
+    margin: 2% 2% 2% 90%;
+}
+
+.profile-pic{
+    margin-top: -40px;
+}
+
+.profile-edit__form{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.submit{
+    background-color: var(--highlight-yellow);
+    font-weight: bold;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 12px;
+    box-shadow: var(--box-shadow);
+    margin-top: 10px;
+}
+
+.submit:hover{
+    background-color: var(--black);
+    color: white;
+}
