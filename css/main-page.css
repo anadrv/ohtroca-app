@@ -1,5 +1,6 @@
 body {
-      background-color: var(--bg-color);
+    background-color: var(--bg-color);
+    display: block;
 }
 
 #menu-desktop {
@@ -222,7 +223,7 @@ header {
     width: 24%;      
     flex-shrink: 0;   
     height: 100vh;
-            position: fixed;
+    position: fixed;
   }
 
   .container {
