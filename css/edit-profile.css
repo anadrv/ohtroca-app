@@ -106,16 +106,7 @@ input {
 
   .profile-edit__form {
     margin-top: 20px;
-    font-weight: bold;
-<<<<<<< Updated upstream
-    border: var(--border);
-    border-radius: var(--border-radius);
-    padding: 12px;
-    box-shadow: var(--box-shadow);
-    margin-top: 10px; 
-=======
->>>>>>> Stashed changes
+  font-weight: bold;
 }
-
 
 }
