@@ -8,10 +8,10 @@ function MenuDesktop() {
       <div className="menu-container-desktop">
         <h2 className="menu-container__name">Menu</h2>
 
-        <a href=""
+        <a href="./main-page.html"
           >Home<span><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
-        <a href=""
+        <a href="./main-page.html"
           >Buscar item<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
@@ -27,15 +27,15 @@ function MenuDesktop() {
           >Histórico de trocas<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
-        <a href=""
+        <a href="./edit-profile.html"
           >Editar perfil<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
-        <a href=""
+        <a href="./settings.html"
           >Configurações<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
-        <a href=""
+        <a href="index.html"
           >Log out<span><img src="/images/icons/arrow-right.png" alt="" /></span></a>
       </div>
     </main>
