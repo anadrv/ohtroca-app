@@ -7,52 +7,85 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
     <link rel="stylesheet" href="/css/user-profile.css" />
     <link rel="stylesheet" href="/css/item-detail.css" />
   </head>
   <body>
+
     <!--HEADER-->
     <div id="header"></div>
 
-    <section class="item-detail">
-      <div class="item-detail__container">
-        <img
-          src="/images/items/jhope-detail-img.png"
-          alt=""
-          class="item-detail__image"
-        />
-        <h1 class="item-detail__name">J-Hope - BTS</h1>
-        <p class="item-detail__description">
-          Brinquedo BTS da coleção McDonald's 2025, original e em ótimo estado.
-        </p>
-        <a href="./exchange.html" class="btn btn-chat">Solicitar troca</a>
-      </div>
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
 
-      <div class="collector">
-        <img src="/images/general/jungsu-img.png" alt="" class="profile__img" />
-        <div class="collector-name">
-          <a href="./user-profile.html" class="name">Kim Jungsu</a>
-          <p>Colecionador</p>
+    <div class="main-container">
+
+      <section class="item-detail">
+        <div class="item-detail__container">
+          <div class="container-img-description">
+            <img
+              src="/images/items/jhope-detail-img.png"
+              alt=""
+              class="item-detail__image"
+              id="mainImage"
+            />
+            <div class="name-description">
+              <h1 class="item-detail__name">J-Hope - BTS</h1>
+              <p class="item-detail__description">
+                Brinquedo BTS da coleção McDonald's 2025, original e em ótimo estado.
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="images-container">
+            <div class="images">
+              <img src="/images/items/jungsu-img.png" alt="" class="thumb" img id="thumbImage">
+              <img src="/images/items/jungsu-size-img.png" alt="" class="thumb" img id="thumbSize">
+              <img src="/images/items/jungsu-box-img.png" alt="" class="thumb" img id="thumbBox">
+            </div>
+            <a href="./exchange.html" class="btn-chat-desktop">Solicitar troca</a>
+          </div>
+
+          <a href="./exchange.html" class="btn btn-chat">Solicitar troca</a>
+
         </div>
-        <div class="stars">
-          <p>
-            5 <span><img src="/images/icons/star.png" alt="" /></span>
+
+        <!--COLLECTOR-->
+        <div class="collector">
+          <div class="collector-name-img">
+            <img src="/images/general/jungsu-img.png" alt="" class="profile__img" />
+            <div class="collector-name">
+              <a href="./user-profile.html" class="name">Kim Jungsu</a>
+              <p>Colecionador</p>
+            </div>
+          </div>
+          <div class="stars">
+            <p>
+              5 <span><img src="/images/icons/star.png" alt="" /></span>
+            </p>
+          </div>
+        </div>
+
+        <!--DETAILS-->
+        <div class="details">
+          <h2>Detalhes</h2>
+          <p class="item-detail__description">
+            Ano: 2025<br />
+            Coleção: BTS<br />
+            Integrante: J-Hope<br />
+            Número: 2/7<br />
+            Condição: Novo<br />
+            Observação: Edição nostalgia - com embalagem original
           </p>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <div class="details">
-        <h2>Detalhes</h2>
-        <p class="item-detail__description">
-          Ano: 2025<br />
-          Coleção: BTS<br />
-          Integrante: J-Hope<br />
-          Número: 2/7<br />
-          Condição: Novo<br />
-          Observação: Edição nostalgia - com embalagem original
-        </p>
-      </div>
-    </section>
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
 
     <!--MENU-->
     <div id="menu"></div>
@@ -71,5 +104,8 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="../js/header.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+    <script src="../js/item-detail.js"></script>
   </body>
 </html>
