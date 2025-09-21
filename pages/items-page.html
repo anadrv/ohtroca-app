@@ -7,19 +7,17 @@
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/css/items-page.css" />
   <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/menu-desktop.css"/>
+  <link rel="stylesheet" href="/css/notifications-desktop.css"/>
   <link rel="stylesheet" href="/css/menu.css"/>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-
 
 </head>
 <body>
+  <div id="menu-desktop"></div>
   <div id="header"></div>
-
+  <div src="main-container"></div>
   <div class="search-bar">
     <img src="/images/icons/search-icon-black.png" alt="ícone pesquisar" class="search-icon-black">
 
@@ -40,7 +38,8 @@
     </div>
   </div>
 </div>
-
+   
+  
   <div class="grid">
         <div class="card">
           <img src="/images/items/jake-img.png" alt="Jake">
@@ -120,15 +119,28 @@
             </button>
           </div>
         </div>  
-  
     </div>   
     </div>
+  </div>
+    <div id="notifications-desktop"></div>
 
-      <div id="menu"></div>
+    <div id="menu"></div>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 
   <script type="text/babel" src="/js/header.js"></script>
   <script type="text/babel" src="/js/menu.js"></script>
-  <script type="text/babel" src="/js/items-page.js"></script>
+  <script type="text/babel" src="../js/menu-desktop.js"></script>
+  <script type="text/babel" src="../js/notifications-desktop.js"></script>
+  <script src="../js/items-page.js"></script>
 </body>
 </html>
