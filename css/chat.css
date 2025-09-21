@@ -8,3 +8,31 @@
 body {
   background-color: var(--bg-color);
 }
+
+.chat-header{
+  display: flex;
+  gap: 60px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.btn-back{
+  all: unset;
+  cursor: pointer;
+}
+
+.message-fixed{
+  background-color: #D9D9D9;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.message-sent{
+  background-color: #D9D9D9;
+  margin-top: 20px;
+  width: 70%;
+}

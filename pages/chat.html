@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,46 @@
     <link rel="stylesheet" href="/js/chat.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
     <!--Perfil-->
     <div class="container">
-    <div class="chat-header">
-        <button class="btn-back"><img src="/images/icons/arrow-left.png" alt="Voltar"></button>
-        <img src="/images/general/perfil-gaon-img.png" alt="Foto de perfil" class="foto de perfil de kwak jiseok">
-        <div class="user-info">
-        <h3>Kwak Jiseok</h3>
-        <p>Online</p>
-    </div>
-    </div>
-    
-    <!--Mensagem-->
-    <div class="message">
-        <div class="message-sent">
-            <p>Bom dia, namorado do Jungsu, vamos combinar o horário e local de troca?</p>
+        <div class="chat-header">
+            <button class="btn-back"><img src="/images/icons/arrow-left.png" alt="Voltar"></button>
+            <img src="/images/general/perfil-gaon-img.png" alt="Foto de perfil" class="foto de perfil de kwak jiseok">
+            <div class="user-info">
+                <h3>Kwak Jiseok</h3>
+                <p>Online</p>
+            </div>
+        </div>
+
+        <!--Mensagem-->
+        <div class="message">
+            <div class="message-fixed">
+                <p>Converse com o trocador para tirar dúvidas ou combinar detalhes.</p>
+            </div>
+            <div class="message-sent">
+                <p>Bom dia, namorado do Jungsu, vamos combinar o horário e local de troca?</p>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <button class="btn-add"><i class="fa-solid fa-plus"></i>
+            </button>
+            <input type="text" class="chat-input">
+            <button class="btn-send"><i class="fa-solid     fa-paper-plane"></i>
+            </button>
         </div>
     </div>
 
-    <div class="chat-input-area">
-        <button class="btn-add"><i class="fa-solid fa-plus"></i>
-        </button>
-            <input type="text" class="chat-input">
-        <button class="btn-send"><i class="fa-solid     fa-paper-plane"></i>
-        </button>
-    </div>
-</div>
-
     <!-- Menu -->
     <div id="menu"></div>
-    
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
 </body>
+
 </html>
