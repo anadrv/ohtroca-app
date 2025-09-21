@@ -34,6 +34,5 @@ a{
 }
 
 .menu-item:hover{
-  background-color: var(--black);
-  color: white;
+  background-color: var(--highlight-yellow);
 }
