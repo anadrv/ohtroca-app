@@ -44,7 +44,7 @@ input{
     border-radius: var(--border-radius);
     padding: 12px;
     box-shadow: var(--box-shadow);
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 .submit:hover{
