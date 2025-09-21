@@ -1,121 +1,122 @@
 body {
-      background-color: var(--bg-color);
-      display: flex;
-      margin: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  margin: 0;
 }
 
 #menu-desktop,
 .home-img-desktop,
-#notifications-desktop {
+#notifications-desktop, .title-page {
   display: none;
 }
 
-
-
-
 .search-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: var(--bg-color);
-      border: 2px solid #000;
-      border-radius: 40px;
-      padding: 10px 15px;
-      width: 100%; 
-      max-width: 330px; 
-      margin: 10px auto; 
-      margin-top: 20px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  border: 2px solid #000;
+  border-radius: 40px;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 330px;
+  margin: 10px auto;
+  margin-top: 20px;
+}
 
-    .search-bar input {
-      border-radius: 40px;
-      outline: none;
-      flex: 1; 
-      padding: 10px;
-      font-size: 14px; /* nn sei se deixo 12 ou 14 dps vejo */
-    }
+.search-bar input {
+  border-radius: 40px;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 14px; /* nn sei se deixo 12 ou 14 dps vejo */
+}
 
-    .search-bar img {
-      width: 20px; 
-      height: 20px;
-      cursor: pointer;
-    }
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 0.45fr);
-      gap: 15px;
-      justify-content: center;
-      margin-top: 40px;
-      padding: 0 10px;
-    }
+ .main-container {
+    margin-bottom: 100px;
+    width: 100%;
+  }
 
-    .card {
-      border: var(--border-thin);
-      border-radius: 12px;
-      padding: 12px;
-      text-align: left;
-      position: relative;
-      background: var(--white);
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.45fr);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 10px;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-      border: var(--border-thin);
+.card {
+  border: var(--border-thin);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+  position: relative;
+  background: var(--white);
+}
 
-    }
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  border: var(--border-thin);
+}
 
-    .card h3 {
-      font-size: 15px;
-      margin: 0 0 4px;
-      color: var( --highlight-yellow);
-    }
+.card h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+  color: var(--highlight-yellow);
+}
 
-    .card p {
-      font-size: 12px;
-      color:var(--black);
-      margin: 0;
-    }
+.card p {
+  font-size: 12px;
+  color: var(--black);
+  margin: 0;
+}
 
-    .fav {
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      padding: 0;
-      font-size: 17px;
-      color: #555;
-      align-self: flex-start;
-      margin-top: -4px;
-    }
+.fav {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 17px;
+  color: #555;
+  align-self: flex-start;
+  margin-top: -4px;
+}
 
-    .info {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
-      margin-bottom: 20px;
-    }
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 
-    .texto {
-      display: flex;
-      flex-direction: column;
-      align-self: flex-start;
-      margin-top: -5px;
-    }
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: -5px;
+}
 
-    .texto a {
-      text-decoration: none;
-      color: inherit; 
-    } 
+.texto a {
+  text-decoration: none;
+  color: inherit;
+}
 
-      .filter-container {
+.filter-container {
   position: relative;
   display: inline-block;
 }
 
 .filter-menu {
   font-family: var(--font-family);
-  display: none;       
+  display: none;
   position: absolute;
   top: 35px;
   right: 0;
@@ -133,7 +134,7 @@ body {
 }
 
 .filter-menu.active {
-  display: flex;          
+  display: flex;
 }
 
 /* DESKTOP */
@@ -161,8 +162,8 @@ body {
   }
 
   .main-container {
-    flex: 1;
-    padding: 20px;
+    margin-left: 30%;
+    width: 45%;
   }
 
   .grid {
@@ -182,5 +183,10 @@ body {
   .home-img-desktop {
     width: 100%;
     display: block;
+  }
+
+  .title-page {
+    display: block;
+    margin-left: 10px;
   }
 }
