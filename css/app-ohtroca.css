@@ -1,84 +1,124 @@
-body{
-     background-color: #f8f0e3;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
-     font-family: var(--font-family);
+body {
+  background-color: #f8f0e3;
+  margin: 0;
+  padding: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inicio h1{
-    font-family: 'Instrument Sans', sans-serif;
-    white-space: nowrap;
-    color: red;
-    padding: 80px;
-    margin: 80px;
-    font-weight: bold;
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.corpo img{
-    width: 150px;
-    height: auto;
-    margin-top: -90px;
+
+.inicio h1 {
+  color: red;
+  font-weight: bold;
+  margin: 30px 0;
+  margin-top: 60px;
 }
 
-.corpo{
-    position: relative; 
-   
-    display: inline-block; 
-    
+.corpo img {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
 }
 
-.corpo h2{
-    position: absolute;
-    top:  -10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+.marca {
+  display: none;
 }
 
 .fim p {
-    font-family:'Instrument Sans', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color:red;
-    padding: 40px;
-    margin-left: -80px;
-}
-
-.botao button{
-    width: 300px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family:'Instrument Sans', sans-serif;
-    cursor: pointer;
-    box-shadow: 2px 3px 0px black;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-bottom: 10px;
-
+  font-size: 23px;
+  font-weight: bold;
+  color: red;
+  margin: 30px 0;
+  text-align: left;
 }
 
 .botao {
   display: flex;
-  flex-direction: column; 
-  gap: 5px; 
-  align-items: center; 
-  margin-top: -20px;
-}
- 
-.botao .entrar{
-    background-color: black;
-    color: white;
-   border: 1px solid white;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-.botao .criar{
-    background-color: #FFC257;
-    color: white;
+.botao button {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 3px 0px black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao .entrar {
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+}
+
+.botao .criar {
+  background-color: #FFC257;
+  color: white;
+}
+
+/* DESKTOP  */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;   
+    align-items: flex-start;
+    gap: 80px;             
+    text-align: left;
+  }
+
+  .esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+  }
+
+  .inicio h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .corpo img{
+    width: 120px;
+  }
+
+  .marca {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .fim p {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
     
+  }
+
+  .botao {
+    align-items: flex-start; 
+    margin-top: 40px;
+  }
+
+  .botao button {
+    width: 350px;
+    padding: 12px;
+    
+  }
 }
