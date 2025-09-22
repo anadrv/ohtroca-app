@@ -141,6 +141,11 @@ header {
   font-size: 15px;
   margin: 0 0 4px;
   color: var(--highlight-yellow);
+
+}
+
+.card h3::hover{
+  color: black;
 }
 
 .card p {
@@ -148,6 +153,7 @@ header {
   color: var(--black);
   margin: 0;
 }
+
 
 .fav {
   border: none;
