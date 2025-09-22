@@ -2,7 +2,7 @@ function Notifications() {
       return (
         <>
           <div className="see-profile">
-            <a className="see-profile__name" href="#">Ver perfil</a>
+            <a className="see-profile__name" href="./main-profile.html">Ver perfil</a>
             <img src="/images/general/perfil-ode-img.png" alt="Perfil" className="see-profile__img" />
           </div>
 

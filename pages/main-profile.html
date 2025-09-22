@@ -13,34 +13,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+  <body>
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
 
-  <!--MENU DESKTOP-->
-  <div id="menu-desktop"></div>
 
   <div class="main-container">
     <div class="container">
       <div class="profile__cover"></div>
       <section class="profile">
         <div class="profile__picture-name">
-          <img src="/images/general/ode-perfil.png" alt="Foto de perfil do usuário" />
-          <div class="profile__name">
-            <h1>Oh Seungmin</h1>
-            <p>Campina Grande - PB</p>
+          <img src="/images/general/ode-perfil.png" alt="" class="img-profile"/>
+          <div class="profile-div">
+            <div class="profile__name">
+              <h1>Oh Seungmin</h1>
+              <p>Campina Grande - PB</p>
+            </div>
+            <div class="profile__icons">
+              <img src="/images/icons/exchange-icon.png" alt="">
+              <a href="/pages/settings.html" class="settings-icon"><img src="/images/icons/settings-icon.png" alt=""></a>
+            </div>
           </div>
-          <button class="btn-troca">
-            <i class="fa-solid fa-arrows-rotate"></i>
-          </button>
-          <button class="btn-configs">
-            <i class="fa-solid fa-gear"></i>
-          </button>
+         
         </div>
       </section>
-
-      <!-- Exchanges -->
       <section class="statistics">
         <div class="exchanges">
-          <h4>02</h4>
+          <h4>05</h4>
           <p>Trocas realizadas</p>
         </div>
         <div class="reviews-stats">
@@ -52,18 +51,15 @@
           <p>Taxa de resposta</p>
         </div>
       </section>
-
-      <!-- Options-->
       <section class="options">
-        <a href="/pages/inventory.html" class="btn btn-inventory">Inventário</a>
-        <a href="/pages/chat.html" class="btn btn-chat">CHAT</a>
-        <a href="" class="btn btn-favorites">Favoritos</a>
-        <a href="" class="btn btn-list">Minha lista de desejos</a>
+        <div class="options__two"><a href="/pages/inventory.html" class="btn btn-inventory">Inventário</a>
+        <a href="/pages/chat.html" class="btn btn-inventory">CHAT</a></div>
+        <a href="/pages/favorites.html" class="btn btn-list">Favoritos</a>
+        <a href="/pages/wishlist.html" class="btn btn-chat">Minha lista de desejos</a>
       </section>
-
       <section class="options-show">
         <div class="options-show__btn active">
-          <button class="btn-options">Meus itens</button>
+          <button class="btn-options">Itens</button>
           <div class="line"></div>
         </div>
         <div class="options-show__btn">
@@ -72,14 +68,14 @@
         </div>
       </section>
 
-      <!--My itens-->
+      <!--CARDS ITEMS-->
       <section class="items active">
         <div class="grid">
           <div class="card">
-            <img src="/images/items/suga-img.png" alt="Suga - Bts edição especial" />
+            <img src="/images/items/suga-img.png" alt="Hello Kitty" />
             <div class="info">
               <div class="texto">
-                <h3>Suga - Bts</h3>
+                <h3>Suga - BTS</h3>
                 <p>Disponível</p>
               </div>
               <button class="fav">
@@ -88,10 +84,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="/images/items/pikachu-img.png" alt="Pikachu marinheiro" />
+            <img src="/images/items/pikachu-img.png" alt="Foto da abelha do mine" />
             <div class="info">
               <div class="texto">
-                <h3>Pikachu</h3>
+                <h3>Piakchu</h3>
                 <p>Disponível</p>
               </div>
               <button class="fav">
@@ -99,7 +95,10 @@
               </button>
             </div>
           </div>
+          
         </div>
+        <a href="./items-page.html" class="all">Ver tudo</a>
+      </section>
 
         <!--Reviews-->
         <section class="reviews">
