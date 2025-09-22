@@ -12,6 +12,21 @@
   <link rel="stylesheet" href="/css/notifications-desktop.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/main-page.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/main-profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
   <body>
     <!--MENU DESKTOP-->
@@ -19,6 +34,7 @@
 
 
   <div class="main-container">
+    <!--PROFILE-->
     <div class="container">
       <div class="profile__cover"></div>
       <section class="profile">
@@ -130,6 +146,40 @@
                 <p>2025-06-03 15:12</p>
               </div>
               <p class="review-text">Troca perfeita! Brinquedo em ótimo estado e comunicação rápida.</p>
+      <!--REVIEWS-->
+      <section class="reviews">
+        <div class="reviews__card">
+          <div class="img-name">
+            <img
+              src="/images/general/perfil-ash-img.png"
+              alt="Foto de perfil - Ash"
+              class="profile__picture"
+            />
+            <h5>Ash</h5>
+          </div>
+          <div class="review">
+            <div class="review__date-stars">
+              <img src="/images/icons/stars.png" alt="" />
+              <p>2025-12-06 20:21</p>
+            </div>
+            <p class="review-text">
+              O brinquedo chegou em ótimas condições, exatamente como combinado. A comunicação com o Seungmin foi rápida e muito tranquila, conseguimos alinhar tudo de forma simples e sem imprevistos.
+            </p> 
+          </div>
+        </div>
+        <div class="reviews__card">
+          <div class="img-name">
+            <img
+              src="/images/general/perfil-junhan-img.png"
+              alt="Foto de perfil - Kwak Jiseok"
+              class="profile__picture"
+            />
+            <h5>Junhan</h5>
+          </div>
+          <div class="review">
+            <div class="review__date-stars">
+              <img src="/images/icons/stars.png" alt="" />
+              <p>2025-06-03 15:12</p>
             </div>
           </div>
     </div>
@@ -153,4 +203,32 @@
   <script type="text/babel" src="../js/notifications-desktop.js"></script>
 </body>
 
+        </div>
+        <a href="./reviews.html" class="reviews-page">Ver tudo</a>
+      </section>
+    </div>
+
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
+    <!--MENU-->
+    <div id="menu"></div>
+
+    <!--REACT-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--SCRIPTS-->
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script src="../js/user-profile.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+  </body>
 </html>
