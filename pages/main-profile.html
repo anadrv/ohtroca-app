@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil pessoal</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/main-profile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil pessoal</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/main-profile.css">
+  <link rel="stylesheet" href="/css/menu-desktop.css" />
+  <link rel="stylesheet" href="/css/notifications-desktop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+  <!--MENU DESKTOP-->
+  <div id="menu-desktop"></div>
+
+  <div class="main-container">
     <div class="container">
       <div class="profile__cover"></div>
       <section class="profile">
@@ -25,7 +32,7 @@
             <i class="fa-solid fa-arrows-rotate"></i>
           </button>
           <button class="btn-configs">
-          <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-gear"></i>
           </button>
         </div>
       </section>
@@ -95,61 +102,56 @@
         </div>
 
         <!--Reviews-->
-      <section class="reviews">
-        <div class="reviews__card">
-          <div class="img-name">
-            <img
-              src="/images/general/ryujin.png"
-              alt="Foto de perfil - Ash"
-              class="profile__picture"
-            />
-            <h5>Ash</h5>
-          </div>
-          <div class="review">
-            <div class="review__date-stars">
-              <img src="/images/icons/stars.png" alt="" />
-              <p>2025-12-06 20:21</p>
+        <section class="reviews">
+          <div class="reviews__card">
+            <div class="img-name">
+              <img src="/images/general/ryujin.png" alt="Foto de perfil - Ash" class="profile__picture" />
+              <h5>Ash</h5>
             </div>
-            <p class="review-text">
-              O brinquedo chegou em ótimas condições, exatamente como combinado. A comunicação com o Seungmin foi rápida e muito tranquila, conseguimos alinhar tudo de forma simples e sem imprevistos.
-            </p>
-          </div>
-        </div>
-        <div class="reviews__card">
-          <div class="img-name">
-            <img
-              src="/images/general/perfil-junhan-img.png"
-              alt="Foto de perfil - Kwak Jiseok"
-              class="profile__picture"
-            />
-            <h5>Junhan</h5>
-          </div>
-          <div class="review">
-            <div class="review__date-stars">
-              <img src="/images/icons/stars.png" alt="" />
-              <p>2025-06-03 15:12</p>
+            <div class="review">
+              <div class="review__date-stars">
+                <img src="/images/icons/stars.png" alt="" />
+                <p>2025-12-06 20:21</p>
+              </div>
+              <p class="review-text">
+                O brinquedo chegou em ótimas condições, exatamente como combinado. A comunicação com o Seungmin foi
+                rápida e muito tranquila, conseguimos alinhar tudo de forma simples e sem imprevistos.
+              </p>
             </div>
-            <p class="review-text">Troca perfeita! Brinquedo em ótimo estado e comunicação rápida.</p>
           </div>
-        </div>
+          <div class="reviews__card">
+            <div class="img-name">
+              <img src="/images/general/perfil-junhan-img.png" alt="Foto de perfil - Kwak Jiseok"
+                class="profile__picture" />
+              <h5>Junhan</h5>
+            </div>
+            <div class="review">
+              <div class="review__date-stars">
+                <img src="/images/icons/stars.png" alt="" />
+                <p>2025-06-03 15:12</p>
+              </div>
+              <p class="review-text">Troca perfeita! Brinquedo em ótimo estado e comunicação rápida.</p>
+            </div>
+          </div>
     </div>
 
     <button class="btn-add">
       <i class="fa-solid fa-plus"></i>
     </button>
+  </div>
 
-    <!-- Menu -->
-    <div id="menu"></div>
-    
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="../js/menu.js"></script>
+  <!--NOTIFICATIONS BAR-->
+  <div id="notifications-desktop"></div>
+
+  <!-- Menu -->
+  <div id="menu"></div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="../js/menu.js"></script>
+  <script type="text/babel" src="../js/menu-desktop.js"></script>
+  <script type="text/babel" src="../js/notifications-desktop.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,84 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/settings.css">
-    
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+
 </head>
 
 <body>
 
     <div id="header"></div>
 
-    <!--Menu options--> 
-    <div class="options-menu">
-        <a href="/pages/edit-profile.html">
-            <button class="menu-item">
-                <span>Editar perfil</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="/pages/notifications.html">
-            <button class="menu-item">
-                <span>Notificações</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="">
-            <button class="menu-item">
-                <span>Impulsionar item</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="">
-            <button class="menu-item">
-                <span>Histórico de trocas</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="">
-            <button class="menu-item">
-                <span>Política de privacidade</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="/pages/termos.html">
-            <button class="menu-item">
-                <span>Termos de uso</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="">
-            <button class="menu-item">
-                <span>Log out</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
-        <a href="/pages/delete-account.html">
-            <button class="menu-item">
-                <span>Excluir conta</span>
-                <img src="/images/icons/arrow-right.png" alt="Avançar">
-            </button>
-        </a>
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
 
+    <!--Menu options-->
+    <div class="main-container">
+        <div class="options-menu">
+            <a href="/pages/edit-profile.html">
+                <button class="menu-item">
+                    <span>Editar perfil</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="/pages/notifications.html">
+                <button class="menu-item">
+                    <span>Notificações</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="">
+                <button class="menu-item">
+                    <span>Impulsionar item</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="">
+                <button class="menu-item">
+                    <span>Histórico de trocas</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="">
+                <button class="menu-item">
+                    <span>Política de privacidade</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="/pages/termos.html">
+                <button class="menu-item">
+                    <span>Termos de uso</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="">
+                <button class="menu-item">
+                    <span>Log out</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+            <a href="/pages/delete-account.html">
+                <button class="menu-item">
+                    <span>Excluir conta</span>
+                    <img src="/images/icons/arrow-right.png" alt="Avançar">
+                </button>
+            </a>
+        </div>
     </div>
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
 
     <!-- Menu -->
     <div id="menu"></div>
-    
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="../js/menu.js"></script>
     <script type="text/babel" src="../js/header.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
 </body>
+
 </html>

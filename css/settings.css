@@ -9,7 +9,12 @@ body {
   background-color: var(--bg-color);
 }
 
-.menu-item{
+#menu-desktop,
+#notifications-desktop {
+  display: none;
+}
+
+.menu-item {
   background-color: white;
   width: 90%;
   display: flex;
@@ -22,17 +27,63 @@ body {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.options-menu{
+.options-menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 50px 0;
 }
 
-.menu-item:hover{
+.menu-item:hover {
   background-color: var(--highlight-yellow);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+  body {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  #header,
+  #menu {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+
+  .main-container {
+    margin-left: 30%;
+    width: 45%;
+  }
+
+  #notifications-desktop {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 24%;
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+  .profile-edit__form {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
 }
