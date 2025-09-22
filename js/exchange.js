@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   exchangeButton.addEventListener("click", () => {
     if (validateSelection()) {
       alert("Troca solicitada com sucesso!");
+      window.location.href = "/pages/main-page.html";
     }
   });
 
