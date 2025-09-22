@@ -50,9 +50,9 @@ main {
     color: var(--black);
     display: flex;
     justify-content: space-between;
-    margin: 8px 32px;
+    margin: 4px 32px;
     background-color: var(--white);
-    padding: 10px 12px;
+    padding: 8px 12px;
     border: var(--border);
     border-radius: var(--border-radius);
     font-weight: 500;
