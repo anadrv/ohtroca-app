@@ -86,4 +86,21 @@ a {
     font-weight: bold;
   }
 
+   .title-page {
+  
+    display: block;
+    margin-top: 13%;
+  }
+
+  .options-menu {
+    width: 100%;
+  }
+
+  
+  .menu-item {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
 }
