@@ -146,6 +146,7 @@ header {
 
 .card h3:hover{
   color: black;
+  cursor: pointer;
 }
 
 .card p {

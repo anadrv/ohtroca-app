@@ -46,6 +46,11 @@ body {
   color: var(--highlight-yellow);
 }
 
+.card h3:hover{
+  color: black;
+  cursor: pointer;
+}
+
 .card p {
   font-size: 12px;
   color: var(--black);
