@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#menu-desktop,
+.title-page {
+  display: none;
+}
+
+.see-profile {
+  color: var(--highlight-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.8rem;
+  margin-top: 60px;
+}
+
+.see-profile__name {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--highlight-yellow);
+}
+
+.see-profile__name:hover {
+  color: var(--black);
+}
+
+.see-profile__img {
+  border-radius: 50%;
+  border: var(--border-thin);
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+
+.notifications__container {
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.notifications-today__container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.link-name {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.link-name:hover {
+  color: var(--highlight-yellow);
+}
+
+.click-here {
+  font-weight: normal;
+  color: var(--highlight-yellow);
+}
+
+.click-here:hover {
+  font-weight: normal;
+  color: var(--black);
+}
+
+.notifications-today__day {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.notifications-all {
+  text-decoration: none;
+  align-self: flex-end;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.notifications-all:hover {
+  color: var(--highlight-yellow);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #header,
+  #menu,
+  .title-page {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+
+  .main-container {
+    margin-left: 30%;
+    width: 45%;
+  }
+
+  .title-page {
+    display: block;
+    margin-top: 13%;
+  }
+
+  .notifications__container {
+    width: 100%;
+  }
+}

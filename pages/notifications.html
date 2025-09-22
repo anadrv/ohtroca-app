@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificações</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/icons/page-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+
+    <!--HEADER-->
+    <div id="header"></div>
+
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
+
+    <div class="main-container">
+
+        <h2 class="title-page">Notificações</h2>
+        <div id="notifications">
+         
+          <div class="notifications">
+            <div class="notifications__container">
+              <div class="notifications-today">
+                <h6 class="notifications-today__day">Hoje</h6>
+                <div class="notifications-today__container">
+                  <p class="notifications-today__paragraph">
+                    <a href="#" class="link-name">Junhan</a> solicitou uma troca.
+                  </p>
+                </div>
+              </div>
+              <div class="notifications-today">
+                <h6 class="notifications-today__day">Últimos 30 dias</h6>
+                <div class="notifications-today__container">
+                  <p class="notifications-today__paragraph">
+                    <a href="../pages/user-profile.html" class="link-name"
+                      >Jungsu</a
+                    >
+                    avaliou uma troca.
+                    <a href="#" class="click-here">Clique aqui.</a>
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="notifications-all">Ver tudo</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!--MENU-->
+    <div id="menu"></div>
+
+    <!--REACT-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--SCRIPTS-->
+    <script type="text/babel" src="../js/header.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+
+  </body>
+</html>
