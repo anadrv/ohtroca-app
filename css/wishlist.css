@@ -70,10 +70,8 @@ body {
       align-self: flex-start;
       margin-top: -5px;
     }
-
-    /* MOBILE */
     .title-page {
-  display: none;
+        display: none;
 }
 
 /* DESKTOP */
@@ -136,6 +134,8 @@ body {
   .title-page {
     display: block;
     margin-left: 10px;
+    margin-top: 70px;
+
   }
 }
 
