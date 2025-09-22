@@ -144,7 +144,7 @@ header {
 
 }
 
-.card h3::hover{
+.card h3:hover{
   color: black;
 }
 
