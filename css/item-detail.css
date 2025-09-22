@@ -101,6 +101,21 @@ body {
     padding-right: 20px;
 }
 
+.wish {
+  text-decoration: none;
+  margin-top: 20px;
+  color: var(--highlight-yellow);
+  font-weight: bold;
+}
+
+.wish:hover {
+  color: var(--black);
+}
+
+.add-wishlist {
+  margin-top: 16px;
+}
+
 /*DETAILS*/
 
 .details h2 {
