@@ -46,14 +46,17 @@ body {
 .chat-input-area {
   display: flex;
   align-items: center;
+  width: 40%;
   padding: 10px;
+  position:fixed;
+  bottom: 0;
 }
 
 .chat-input {
   flex-grow: 1;
   padding: 12px;
   border-radius: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; 
 }
 
 .message-area {
@@ -69,7 +72,22 @@ body {
   width: 80%;
   border-radius: 20px;
   text-align: center;
-  margin-left: auto
+  margin-left: auto;
+  padding: 10px;
+}
+
+.btn-add{
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.btn-send{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 /* DESKTOP */
