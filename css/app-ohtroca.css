@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
 body {
   background-color: #f8f0e3;
   margin: 0;
   padding: 0;
-  font-family: 'Instrument Sans', sans-serif;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,15 +16,14 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 20px;
 }
 
-
 .inicio h1 {
-  color: red;
+  color: var(--red);
   font-weight: bold;
   margin: 30px 0;
   margin-top: 60px;
@@ -38,7 +42,7 @@ body {
 .fim p {
   font-size: 23px;
   font-weight: bold;
-  color: red;
+  color: var(--red);
   margin: 30px 0;
   text-align: left;
 }
@@ -58,67 +62,40 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px 3px 0px black;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
 }
 
 .botao .entrar {
   background-color: black;
   color: white;
-  border: solid 1px white;
+}
+
+.botao .entrar:hover {
+  background-color: #ffd895;
+  color: var(--black);
 }
 
 .botao .criar {
-  background-color: #FFC257;
-  color: white;
+  background-color: #ffc257;
+  color: var(--black);
 }
 
-/* DESKTOP  */
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;   
-    align-items: flex-start;
-    gap: 90px;             
-    text-align: left;
-  }
+.botao .criar:hover {
+  background-color: #ffd895;
+  color: var(--black);
+}
 
-  .esquerda {
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-  }
-
-  .inicio h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .corpo img{
-    width: 120px;
-  }
-
-  .marca {
-    font-size: 25px;
-    margin-top: 15px;
-  }
-
-  .fim p {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-align: left;
-    
-  }
-
-  .botao {
-    align-items: flex-start; 
-    margin-top: 40px;
-  }
-
-  .botao button {
-    width: 350px;
-    padding: 12px;
-    
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
+  /*COLORS*/
+  --bg-color: #f8f8f8;
+  --menu-bg: #202020;
+  --white: #ffffff;
+  --black: #000000;
+  --highlight-yellow: #ffc257;
+  --medium-yellow: #faefdd;
+  --light-yellow: #fefaef;
+  --red: #ce0003;
 
-      /*COLORS*/
-      --bg-color: #F8F8F8;
-      --menu-bg: #202020;
-      --white: #FFFFFF;
-      --black: #000000;
-      --highlight-yellow: #FFC257;
-      --medium-yellow: #FAEFDD;
-      --light-yellow: #FEFAEF;
-      --red: #CE0003;
+  /*FONT*/
+  --font-family: "Instrument Sans", sans-serif;
 
-      /*FONT*/
-      --font-family: 'Instrument Sans', sans-serif;
-
-      /*BORDER*/
-      --border: 2px solid black; 
-      --border-thin: 1px solid black; 
-      --box-shadow: 1px 1px 0 black;;
-      --border-radius: 10px;
+  /*BORDER*/
+  --border: 2px solid black;
+  --border-thin: 1px solid black;
+  --box-shadow: 1px 1px 0 black;
+  --border-radius: 10px;
 }
 
