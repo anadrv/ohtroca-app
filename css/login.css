@@ -88,12 +88,13 @@ body {
     }
 
     .cabeçalho{
-        margin-left: 1480px;
+        margin-left: 1380px;
         
     }
 
     .cabeçalho img{
-        width: 50px;
+        width: 70px;
+        margin-top: 15px;
     }
     
     .container {
