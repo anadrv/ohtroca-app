@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliações</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+    <link rel="stylesheet" href="/css/main-page.css" />
+    <link rel="stylesheet" href="/css/item-detail.css" />
+    <link rel="stylesheet" href="/css/request-exchange.css" />
+    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div id="header"></div>
+
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
+
+    <!--REQUEST-->
+
+    <section class="request-exchange">
+        
+        <h2>Jungsu deseja trocar</h2>
+
+        <div class="items-container">
+
+            <div class="card">
+              <img
+                src="/images/items/hello-kitty-bailarina.png"
+                alt="Hello Kitty"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Bailarina</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="icon-exchange">
+                <img src="/images/icons/icon-exchange.png" alt="">
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/items/hello-kitty-bailarina.png"
+                alt="Hello Kitty"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Bailarina</h3>
+                  <p>Disponível</p>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+        </div>
+
+        <!--DETAILS-->
+        <div class="details">
+          <h2>Detalhes</h2>
+          <p class="item-detail__description">
+            Ano: 2025<br />
+            Coleção: BTS<br />
+            Integrante: J-Hope<br />
+            Número: 2/7<br />
+            Condição: Novo<br />
+            Observação: Edição nostalgia - com embalagem original
+          </p>
+        </div>
+
+        <div class="btn-options-exchange">
+            <a href="./chat.html" class="btn-ex btn-options-exchange__chat">Conversar com colecionador</a>
+            <a href="#" class="btn-ex btn-options-exchange__request">Aceitar troca</a>
+        </div>
+
+        <div class="btn-ex btn-options-exchange__reject">
+            <p>Recusar troca</p>
+        </div>
+
+
+
+    </section>
+
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
+    <!--MENU-->
+    <div id="menu"></div>
+
+    <!--REACT-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--SCRIPTS-->
+    <script type="text/babel" src="../js/header.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+  </body>
+</html>
