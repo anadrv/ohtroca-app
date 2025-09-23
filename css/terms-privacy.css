@@ -33,7 +33,7 @@ body{
     background-color: #F8F8F8;            
     padding: 20px;                     
     border-radius: var(--border-radius);               
-    width: 300px;                      
+    width: 80%;                      
     margin: 40px auto;    
      
 }
@@ -70,8 +70,8 @@ body{
     justify-content: flex-start;
     background-color: #F8F8F8;            
     padding: 20px;                     
-    border-radius: 12px;               
-    width: 300px;                      
+    border-radius: var(--border-radius);             
+    width: 80%;                      
     margin: 40px auto;   
    
      
