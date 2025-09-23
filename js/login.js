@@ -4,7 +4,7 @@ const senha = document.querySelector("#password")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
-  window.location.href = "main-page.html"
+ 
 
   if (email.value === "") {
     alert("Campo vazio! Por favor, preencha seu e-mail.")
@@ -15,8 +15,9 @@ formulario.addEventListener("submit", (event) => {
     alert("A senha precisa ter no mínimo 5 dígitos")
     return
   }
+  
+  window.location.href = "main-page.html"
 
-  formulario.submit()
 })
 
 function validaSenha(password, minDigit) {

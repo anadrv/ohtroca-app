@@ -6,11 +6,11 @@ const cidade = document.querySelector("#cidade")
 const estado = document.querySelector("#estado")
 const senha = document.querySelector("#password")
 const cpf = document.querySelector("#cpf")
+const data = document.querySelector("#data")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
-  window.location.href = "login.html"
-
+  
   if (nome.value === "") {
     alert("Campo vazio! Por favor, preencha seu nome")
     return
@@ -36,26 +36,26 @@ formulario.addEventListener("submit", (event) => {
     return
   }
 
-  if (!validaCPF(cpf.value, 11)){
-    alert("O cpf precisa conter 11 dígitos!")
+  if (!validaCPF(cpf.value)) {
+    alert("O CPF é inválido! Ele precisa conter exatamente 11 números.")
     return
   }
 
-  
-  formulario.submit()
+  if(data.value === ""){
+    alert("Selecione sua data de nascimento!")
+    return
+  }
+
+
+ 
+  window.location.href = "login.html"
 })
 
 function validaSenha(password, minDigit) {
-    if (password.length >= minDigit) {
-        return true
-
-    }
-    return false
+  return password.length >= minDigit
 }
 
-function validaCPF(cpf,minDigit){
-  if (cpf.length >= minDigit){
-    return true
-  }
-  return false
+function validaCPF(cpf) {
+  const apenasNumeros = cpf.replace(/\D/g, "");
+  return apenasNumeros.length === 11;
 }
