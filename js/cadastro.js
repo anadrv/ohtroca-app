@@ -5,6 +5,7 @@ const email = document.querySelector("#email")
 const cidade = document.querySelector("#cidade")
 const estado = document.querySelector("#estado")
 const senha = document.querySelector("#password")
+const cpf = document.querySelector("#cpf")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
@@ -34,10 +35,27 @@ formulario.addEventListener("submit", (event) => {
     alert("A senha precisa ter no mínimo 5 dígitos")
     return
   }
+
+  if (!validaCPF(cpf.value, 11)){
+    alert("O cpf precisa conter 11 dígitos!")
+    return
+  }
+
   
   formulario.submit()
 })
 
 function validaSenha(password, minDigit) {
-  return password.length >= minDigit
+    if (password.length >= minDigit) {
+        return true
+
+    }
+    return false
+}
+
+function validaCPF(cpf,minDigit){
+  if (cpf.length >= minDigit){
+    return true
+  }
+  return false
 }
