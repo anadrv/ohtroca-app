@@ -4,6 +4,7 @@ const senha = document.querySelector("#password")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
+  window.location.href = "main-page.html"
 
   if (email.value === "") {
     alert("Campo vazio! Por favor, preencha seu e-mail.")

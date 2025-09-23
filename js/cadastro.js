@@ -1,3 +1,5 @@
+
+
 const formulario = document.querySelector("#formulario")
 const nome = document.querySelector("#name")
 const email = document.querySelector("#email")
@@ -6,6 +8,7 @@ const estado = document.querySelector("#estado")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
+  window.location.href = "login.html"
 
   if (nome.value === "") {
     alert("Campo vazio! Por favor, preencha seu nome")

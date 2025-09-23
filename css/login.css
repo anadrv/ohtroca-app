@@ -74,8 +74,21 @@ body {
     margin-top: 15px;
 }
 
+.criar a{
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.esqueceu a{
+    color: black;
+    font-weight: bold;
+    margin-left: -2px;
+}
+
 .perguntas .esqueceu{
     margin-top: -1px;
+
 }
 
 
@@ -136,8 +149,13 @@ body {
     #formulario button {
         width: 100%;
         margin-top: 12px;
+        cursor: pointer;
+        transition: all 0.5 ease;
     }
-
+    
+    #formulario button:hover{
+      transform: translateY(-4px);
+    }
     .perguntas {
         align-items: flex-start;
         margin-left: -20px;
@@ -152,5 +170,11 @@ body {
     .perguntas .criar{
         margin-top: -1px;
         margin-left: -50px;
+    }
+
+    .criar a{
+        color: black;
+        font-weight: bold;
+        margin-left: 5px;
     }
 }

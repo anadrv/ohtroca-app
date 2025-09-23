@@ -19,6 +19,7 @@ body{
     text-align: center;
     margin-top: 220px;
     border: solid 2px black;
+    width: 250px;
 }
 
 .aviso img {
@@ -40,8 +41,10 @@ strong{
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 1.5px; 
+    color: black;
    
 }
+
 
 .butao{
   display: flex;
@@ -52,8 +55,8 @@ strong{
 }
 
 .butao button{
-    width: 300px;
-    padding: 10px;
+    width: 335px;
+    padding: 12px;
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -63,10 +66,35 @@ strong{
     box-shadow: 2px 3px 0px black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+}
+
+.butao button:hover{
+    transform: translateY(-4px);
 }
 
 .butao .continue{
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+
+/* --- Desktop --- */
+@media (min-width: 768px) {
+
+    .aviso{
+        width: 410px;
+        height: 200px;
+    }
+
+    .aviso p {
+        font-size: 20px;
+    }
+
+    .butao button{
+       margin-top: 10px;
+       width: 500px;
+       padding: 10px;
+    }
 }

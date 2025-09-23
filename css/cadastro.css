@@ -186,11 +186,22 @@ body {
         width: 293px;
         margin-left: 5px;
         padding-top: -20px;
+        cursor: pointer;
+        transition: all 0.5 ease;
+    }
+
+    .campos button:hover{
+        transform: translateY(-4px);
     }
 
     .pergunta{
         padding-top: 10px;
         margin-bottom: -5px;
+    }
+
+    .pergunta a{
+        color: black;
+        font-weight: bold;
     }
 
     .campos .titulo {
