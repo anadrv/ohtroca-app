@@ -9,7 +9,8 @@ body {
   background-color: var(--bg-color);
 }
 
-#menu-desktop, #notifications-desktop
+#menu-desktop,
+#notifications-desktop,
 .title-page {
   display: none;
 }
@@ -137,13 +138,21 @@ body {
     overflow-y: auto;
   }
 
-  #notifications-desktop { 
+  .see-profile {
     display: block;
     position: fixed;
-    right: 0;          
-    width: 24%;         
+    right: 0;
+    width: 24%;
     height: 100vh;
+    top: 0;
+
+
+  }
+
+  .see-profile__name {
     margin-right: 20px;
+    margin-left: 100px;
+
   }
 
   .main-container {
@@ -157,7 +166,7 @@ body {
   }
 
   .notifications__container {
-    width: 90%;
+    width: 100%;
 
   }
 }

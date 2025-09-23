@@ -10,7 +10,7 @@ body {
 }
 
 #menu-desktop,
-#notifications-desktop {
+#notifications-desktop, .title-page {
   display: none;
 }
 
@@ -26,6 +26,8 @@ body {
   justify-content: space-between;
   cursor: pointer;
 }
+
+
 
 a {
   text-decoration: none;
