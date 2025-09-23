@@ -9,7 +9,7 @@ body {
   background-color: var(--bg-color);
 }
 
-#menu-desktop,
+#menu-desktop, #notifications-desktop
 .title-page {
   display: none;
 }
@@ -137,6 +137,15 @@ body {
     overflow-y: auto;
   }
 
+  #notifications-desktop { 
+    display: block;
+    position: fixed;
+    right: 0;          
+    width: 24%;         
+    height: 100vh;
+    margin-right: 20px;
+  }
+
   .main-container {
     margin-left: 30%;
     width: 45%;
@@ -148,6 +157,7 @@ body {
   }
 
   .notifications__container {
-    width: 100%;
+    width: 90%;
+
   }
 }
