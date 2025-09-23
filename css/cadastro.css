@@ -20,6 +20,10 @@ body {
     
 }
 
+.cabeçalho img{
+    width: 25px;
+}
+
 
 .campos {
     flex: 1 0 auto;        
@@ -138,7 +142,9 @@ body {
     }
 
     .cabeçalho img {
-        width: 80px;
+        width: 70px;
+        margin-top: 1px;
+        margin-left: 180px;
     }
 
     

@@ -7,6 +7,7 @@ body{
     
 }
 
+
 .aviso {
     display: flex;
     flex-direction: column;  
@@ -46,6 +47,7 @@ strong{
 }
 
 
+
 .butao{
   display: flex;
   flex-direction: column; 
@@ -82,10 +84,27 @@ strong{
 
 /* --- Desktop --- */
 @media (min-width: 768px) {
+    
+    
+    .cabeçalho {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 50px;
+       
+    }
+
+    
+    .cabeçalho img {
+        width: 70px;
+        margin-top: 1px;
+        margin-left: 1499px;
+        
+    }
 
     .aviso{
         width: 410px;
         height: 200px;
+        margin-top: 90px;
     }
 
     .aviso p {
@@ -97,4 +116,6 @@ strong{
        width: 500px;
        padding: 10px;
     }
+
+
 }
