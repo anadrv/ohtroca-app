@@ -1,184 +1,192 @@
-
 body {
-    background-color: #f8f0e3;
-    font-family: 'Instrument Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #f8f0e3;
+  font-family: "Instrument Sans", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 85%;
+  
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+  max-width:95%;
+}
 .cabeçalho header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 18px;   
-    border-bottom: 1px solid #f8f0e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  margin:60px auto 0 auto;
 }
 
-.cabeçalho img{
-    width: 25px;
+.cabeçalho img {
+  width: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .bem-vindo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 20px 0;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  
 }
 
 .login h1 {
-    margin: 10px 0;
-    margin-left: -220px;
-    margin-top: -25px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 10px auto;
+  text-align: left;
+  font-size: 1.8rem;
 }
 
 #formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 280px;
-    margin-top: 10px;
-    margin-left: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 #formulario input {
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 #formulario button {
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 2px 3px 0px black;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  margin-top: 10px;
 }
 
 #formulario .entrar {
-    background-color: #FFC257;
-    border: 1px solid black;
+  background-color: #ffc257;
+  border: var(--border);
+}
+
+#formulario .entrar:hover {
+  color: white;
+  background-color: black;
 }
 
 .perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.criar a {
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.esqueceu a {
+  color: black;
+  font-weight: bold;
+  margin-left: -2px;
+  text-decoration: none;
+}
+
+.esqueceu a:hover {
+  color: var(--highlight-yellow);
+}
+
+.perguntas .esqueceu {
+  margin-top: -1px;
+}
+
+.criar a:hover {
+  color: var(--highlight-yellow);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-color: var(--medium-yellow);
+    width: 62%;
+    margin: 70px auto 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    gap: 20px;
+    padding: 0;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .login {
+    width: 50%;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .login h1 {
+    margin: 0 0 10px 0;
+  }
+
+  .bem-vindo {
+    width: 50%; /* largura da imagem */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 15px;
-}
+  }
 
-.criar a{
-    color: black;
-    font-weight: bold;
-    margin-left: 5px;
-}
+  .bem-vindo img {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* remove margin extra */
+  }
+  .perguntas {
+    align-items: flex-start; /* alinha à esquerda no desktop */
+    margin-top: 10px; /* espaço em cima */
+  }
 
-.esqueceu a{
-    color: black;
-    font-weight: bold;
-    margin-left: -2px;
-}
-
-.perguntas .esqueceu{
-    margin-top: -1px;
-
-}
-
-
-/* Desktop */
-
-@media (min-width: 768px) {
-    
-    body{
-        background-color: white;
-    }
-
-    .cabeçalho{
-        margin-left: 1380px;
-        
-    }
-
-    .cabeçalho img{
-        width: 70px;
-        margin-top: 15px;
-        margin-left: 180px;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px; 
-        margin-top: 60px;
-        padding: 40px;
-        background-color: #fff3e0;
-        border-radius: 10px;
-        box-shadow: 2px 3px 6px rgba(0,0,0,0.9);
-        border: solid 2px black;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
-
-    }
-
-    .bem-vindo, .login {
-        flex: 1;
-    }
-
-    .login h1 {
-        margin-left: -290px;
-        margin-top: 50px;
-        text-align: left;
-    }
-
-    #formulario {
-        width: 70%;
-        margin-left: -100px;
-        margin-top: 10px;
-        gap: 8px;
-    }
-    
-        
-    #formulario button {
-        width: 100%;
-        margin-top: 12px;
-        cursor: pointer;
-        transition: all 0.5 ease;
-    }
-    
-    #formulario button:hover{
-      transform: translateY(-4px);
-    }
-    .perguntas {
-        align-items: flex-start;
-        margin-left: -20px;
-        
-        
-    }
-    .perguntas .esqueceu{
-        margin-top: -1px;
-        margin-left: -15px;
-    }
-
-    .perguntas .criar{
-        margin-top: -1px;
-        margin-left: -50px;
-    }
-
-    .criar a{
-        color: black;
-        font-weight: bold;
-        margin-left: 5px;
-    }
+  .perguntas p {
+    margin: 4px 0;
+  }
 }
