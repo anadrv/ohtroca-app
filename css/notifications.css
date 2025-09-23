@@ -9,7 +9,7 @@ body {
   background-color: var(--bg-color);
 }
 
-#menu-desktop, #notifications-desktop
+#menu-desktop, #notifications-desktop,
 .title-page {
   display: none;
 }

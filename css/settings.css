@@ -10,7 +10,7 @@ body {
 }
 
 #menu-desktop,
-#notifications-desktop {
+#notifications-desktop, .title-page {
   display: none;
 }
 
