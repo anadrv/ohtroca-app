@@ -14,7 +14,7 @@ function Notifications() {
                 <h6 className="notifications-today__day">Hoje</h6>
                 <div className="notifications-today__container">
                   <p className="notifications-today__paragraph">
-                    <a href="#" className="link-name">Junhan</a> solicitou uma troca.
+                    <a href="./request-exchange.html" className="link-name">Kwak Jiseok</a> solicitou uma troca.
                   </p>
                 </div>
               </div>

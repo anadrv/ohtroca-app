@@ -13,6 +13,7 @@
 .request-exchange_title {
   font-size: 1.3rem;
   margin-bottom: 10px;
+
 }
 
 .request-exchange {
@@ -132,6 +133,11 @@
   align-items: center;
   width: 80%;
   margin: 0 auto;
+}
+
+.request-exchange_title {
+
+  margin-top: 60px;
 }
 
 }
