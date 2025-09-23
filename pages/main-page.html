@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="/css/menu-desktop.css" />
     <link rel="stylesheet" href="/css/notifications-desktop.css" />
     <link rel="stylesheet" href="/css/main-page.css" />
-    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/icons/page-icon.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -30,18 +34,14 @@
 
     <div class="main-container">
       <div class="search-bar">
-        <img
-          src="/images/icons/search-icon-black.png"
-          alt="ícone pesquisar"
-          class="search-icon-black"
-        />
+        <img src="/images/icons/search-icon-black.png" alt="" />
+        <input type="text" placeholder="Pesquisar" />
+
         <div class="filter-container">
-          <img
-            src="/images/icons/filter-icon.png"
-            alt="ícone filter"
-            class="filter-icon-black"
-            id="filter-btn"
-          />
+          <button class="filter-btn">
+            <img src="/images/icons/filter-icon.png" alt="" />
+          </button>
+
           <div class="filter-menu">
             <label><input type="checkbox" /> Usados</label>
             <label><input type="checkbox" /> Novo</label>
@@ -206,13 +206,11 @@
       </div>
     </div>
 
-      <!--MENU-->
+    <!--MENU-->
     <div id="menu"></div>
 
     <!--NOTIFICATIONS BAR-->
     <div id="notifications-desktop"></div>
-
-  
 
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"

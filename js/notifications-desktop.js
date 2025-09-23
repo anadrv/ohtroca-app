@@ -29,7 +29,7 @@ function Notifications() {
                 </div>
               </div>
 
-              <a href="#" className="notifications-all">Ver tudo</a>
+              <a href="../pages/notifications.html" className="notifications-all">Ver tudo</a>
             </div>
           </div>
         </>

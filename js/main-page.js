@@ -1,15 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const filterBtn = document.querySelector(".filter-btn");
+  const filterMenu = document.querySelector(".filter-menu");
 
-const filterBtn = document.getElementById("filter-btn");
-const filterMenu = document.querySelector(".filter-menu");
-
-filterBtn.addEventListener("click", (event) => {
-  event.stopPropagation(); 
-  filterMenu.classList.toggle("active");
+  filterBtn.addEventListener("click", () => {
+    filterMenu.classList.toggle("active");
+  });
 });
 
-document.addEventListener("click", (event) => {
-  if (!filterMenu.contains(event.target) && !filterBtn.contains(event.target)) {
-    filterMenu.classList.remove("active");
-  }
-});
 
+document.addEventListener("DOMContentLoaded", () => {
+  const favButtons = document.querySelectorAll(".fav i");
+
+  favButtons.forEach(icon => {
+    icon.addEventListener("click", () => {
+      icon.classList.toggle("active");
+      icon.classList.toggle("fa-regular");
+      icon.classList.toggle("fa-solid");
+    });
+  });
+});

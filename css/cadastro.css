@@ -1,77 +1,87 @@
+
 body {
     background-color: #f8f0e3;
+    font-family: 'Instrument Sans', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+
 }
+
 
 .cabeçalho header {
+    
     flex: 0 0 auto;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
+    
 }
 
-.campos .titulo {
-    margin-right: auto;
-    margin-left: -5px;
-    margin-top: -20px;
-    font-weight: bolder;
-}
 
 .campos {
-    flex: 1 0 auto;       
+    flex: 1 0 auto;        
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+
     padding-top: 50px;     
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+
     background-color: #F8F8F8;
     width: 100%;
-    border-radius: 0;
+    border-radius: 30px;
     box-shadow: none;
     border: none;
     border-top: solid 2px black;
-    border-top-left-radius: 20px;   
-    border-top-right-radius: 20px;
     box-sizing: border-box;
+    
 }
+
+
+.campos .titulo {
+    margin: 0 0 20px 0;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left: -190px;
+}
+
 
 #formulario {
     display: flex;
-    flex-direction: column; 
-    gap: 15px;              
-    width: 300px; 
-    margin-left: -10px;        
-    margin-top: -5px;  
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-left: 30px;
 }
 
-#formulario input,#formulario select {
-    padding: 10px;          
+#formulario input,
+#formulario select {
+    padding: 12px;          
     font-size: 16px;       
     border: 1px solid #ccc; 
     border-radius: 8px;     
-    width: 100%;   
+    width: 90%;   
     box-sizing: border-box;
 }
 
 #formulario button {
-    width: 320px;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Instrument Sans', sans-serif;
     cursor: pointer;
     box-shadow: 2px 3px 0px black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-top: 10px;
+    width: 300px;
+    margin-left: 10px;
 }
 
 #formulario .confirmar {
@@ -87,12 +97,103 @@ body {
 }
 
 .campo-cidade-estado div {
-    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
+#formulario .campo-cidade-estado > div:first-child { 
+    flex: 0.5;
+}
+
+#formulario .campo-cidade-estado > div:last-child { 
+     flex: 0.45;
+     margin-left: -15px;
+     
+}
+
 .campos .pergunta {
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+
+}
+
+
+/* --- Desktop --- */
+@media (min-width: 768px) {
+    
+    body {
+        background-color: white;
+    }
+
+    .cabeçalho {
+        margin-left: 1360px;
+    }
+
+    .cabeçalho img {
+        width: 80px;
+    }
+
+    .campos .titulo {
+        margin-left: -200px;
+        margin-top: 10px;
+    }
+
+    .campos {
+        padding: 50px 40px;
+        margin-top: 60px;
+        border-radius: 15px;
+        max-width: 500px;
+        box-shadow: 2px 3px 6px rgba(0,0,0,0.9);
+        border: solid 2px black;
+        margin-top: -20px;
+        margin-left: 500px;
+       
+    }
+
+    #formulario{
+        margin-left: 100px;
+    }
+
+    
+    #formulario input {
+        width: 300px;
+    }
+
+    
+    #formulario .campo-cidade-estado {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #formulario .campo-cidade-estado > div:first-child { 
+        flex: 0.35;
+    }
+
+    #formulario .campo-cidade-estado > div:last-child { 
+        flex: 0.35;
+        margin-left: 20px;
+    }
+
+    #formulario .campo-cidade-estado input,
+    #formulario .campo-cidade-estado select {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: none;
+    }
+
+    .campos button{
+        width: 293px;
+        margin-left: 5px;
+        padding-top: -20px;
+    }
+
+    .pergunta{
+        padding-top: 10px;
+        margin-bottom: -5px;
+    }
+
+    .campos .titulo {
+        font-size: 24px;
+    }
 }

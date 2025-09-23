@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const filterBtn = document.querySelector(".filter-btn");
+  const filterMenu = document.querySelector(".filter-menu");
+
+  filterBtn.addEventListener("click", () => {
+    filterMenu.classList.toggle("active");
+  });
+});
 
 const filterBtn = document.getElementById("filter-btn");
 const filterMenu = document.querySelector(".filter-menu");
