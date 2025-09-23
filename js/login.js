@@ -20,5 +20,9 @@ formulario.addEventListener("submit", (event) => {
 })
 
 function validaSenha(password, minDigit) {
-  return password.length >= minDigit
-}
+    if (password.length >= minDigit) {
+        return true
+
+    }
+    return false
+};
