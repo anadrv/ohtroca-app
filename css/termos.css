@@ -1,10 +1,13 @@
-body{
+body {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+
+.cabeçalho {
+    display: none; 
 }
 
 .aviso {
@@ -28,33 +31,31 @@ body{
     height: auto;
 }
 
-.aviso p{
+.aviso p {
     font-family: 'Instrument Sans', sans-serif;
     font-size: 15px;
 }
 
-strong{
+strong {
     font-weight: bold;
 }
 
-.sublinhado{
+.sublinhado {
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 1.5px; 
     color: black;
-   
 }
 
-
-.butao{
-  display: flex;
-  flex-direction: column; 
-  gap: 5px; 
-  align-items: center; 
-  margin-top: 20px;
+.butao {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+    align-items: center; 
+    margin-top: 20px;
 }
 
-.butao button{
+.butao button {
     width: 335px;
     padding: 12px;
     border: none;
@@ -70,11 +71,11 @@ strong{
     transition: all 0.5 ease;
 }
 
-.butao button:hover{
+.butao button:hover {
     transform: translateY(-4px);
 }
 
-.butao .continue{
+.butao .continue {
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -82,17 +83,29 @@ strong{
 
 /* --- Desktop --- */
 @media (min-width: 768px) {
+    .cabeçalho {
+        display: flex; 
+        justify-content: flex-end;
+        padding: 20px 50px;
+    }
 
-    .aviso{
+    .cabeçalho img {
+        width: 70px;
+        margin-top: 1px;
+        margin-left: 1499px;
+    }
+
+    .aviso {
         width: 410px;
         height: 200px;
+        margin-top: 90px;
     }
 
     .aviso p {
         font-size: 20px;
     }
 
-    .butao button{
+    .butao button {
        margin-top: 10px;
        width: 500px;
        padding: 10px;
