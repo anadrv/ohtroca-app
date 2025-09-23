@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de desejos</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/user-profile-wishlist.css">
+    <link rel="stylesheet" href="/css/menu.css"/>
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css"/>
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div id="menu-desktop"></div>
+  <div class="main-container">
+    <div id="header"></div>
+    <h1 class="title-page">Lista de desejos</h1>
+
+    <div class="grid">
+        <div class="card">
+          <img src="/images/items/jin-img.png" alt="Jin BTS">
+            
+          <div class="info">
+              <div class="texto"> 
+                <h3>Jin - BTS</h3>
+                <p>Disponível</p>
+              </div>
+                <button class="fav">
+                    <i class="fa-solid fa-heart" style="color: red;"></i>
+              </button>
+          </div>
+        </div>
+    </div>
+  </div>  
+
+    <div id="notifications-desktop"></div>
+
+    <div id="menu"></div>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script type="text/babel" src="/js/menu.js"></script>
+    <script type="text/babel" src="/js/header.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+</body>
+</html>
+
