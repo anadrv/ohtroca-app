@@ -1,10 +1,10 @@
 
-
 const formulario = document.querySelector("#formulario")
 const nome = document.querySelector("#name")
 const email = document.querySelector("#email")
 const cidade = document.querySelector("#cidade")
 const estado = document.querySelector("#estado")
+const senha = document.querySelector("#password")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
@@ -30,5 +30,14 @@ formulario.addEventListener("submit", (event) => {
     return
   }
 
+  if (!validaSenha(senha.value, 5)) {
+    alert("A senha precisa ter no mínimo 5 dígitos")
+    return
+  }
+  
   formulario.submit()
 })
+
+function validaSenha(password, minDigit) {
+  return password.length >= minDigit
+}
