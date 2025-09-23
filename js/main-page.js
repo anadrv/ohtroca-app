@@ -19,3 +19,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.querySelector(".btn-ver-mais");
+  const hiddenCards = document.querySelectorAll(".colecao .card.hide");
+
+  btn.addEventListener("click", () => {
+    const isExpanded = btn.textContent === "Ver menos";
+
+    if (isExpanded) {
+
+      hiddenCards.forEach(card => card.classList.add("hide"));
+      btn.textContent = "Ver mais";
+    } else {
+
+      hiddenCards.forEach(card => card.classList.remove("hide"));
+      btn.textContent = "Ver menos";
+    }
+  });
+});
+
+
+
+

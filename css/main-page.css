@@ -92,6 +92,14 @@ header {
   display: block;
 }
 
+.bottons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .botoes-container {
   display: flex;
   justify-content: space-between;
@@ -111,6 +119,12 @@ header {
   font-weight: 600;
   cursor: pointer;
   text-align: center;
+  width: 100%;
+} 
+
+.btn-preto:hover {
+  background-color: var(--highlight-yellow);
+  color: var(--black);
 }
 
 .destaques {
@@ -160,6 +174,31 @@ header {
   font-size: 12px;
   color: var(--black);
   margin: 0;
+}
+
+.ver-mais-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.btn-ver-mais {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.btn-ver-mais:hover {
+  color: var(--highlight-yellow);
+}
+
+.hide {
+  display: none;
 }
 
 
