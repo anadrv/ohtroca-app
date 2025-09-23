@@ -1,42 +1,49 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-desktop,
+#notifications-desktop,
+.title-page {
+  display: none;
+}
+
+.request-exchange_title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .request-exchange {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .btn-options-exchange {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
-
 .items-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .icon-exchange img {
-    width: 24px;
-
+  width: 24px;
 }
 
 .btn-ex {
-    background-color: var(--highlight-yellow);
+  background-color: var(--highlight-yellow);
   width: 100%;
   padding: 12px;
   border-radius: var(--border-radius);
@@ -45,7 +52,86 @@
   color: var(--black);
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
 }
 
+.btn-ex:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-options-exchange__chat {
+  background-color: var(--light-yellow);
+}
+
+.btn-options-exchange__reject {
+  font-weight: bold;
+}
+
+.btn-options-exchange__reject:hover {
+  cursor: pointer;
+  color: var(--highlight-yellow);
+}
+
+.details h2 {
+  font-size: 1rem;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
 
 
+  body {
+    display: flex;
+    gap: 10px; 
+    width: 90%;
+    margin: 0 auto;       
+  }
+
+
+  #header, #menu, .title-page {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;      
+    flex-shrink: 0;   
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+
+  .request-exchange {
+    margin-left: 30%;
+    width: 45%;
+  }
+
+ #notifications-desktop { 
+    display: block;
+    position: fixed;
+    right: 0;          
+    width: 24%;         
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+  .title-page_request {
+    display: block;
+    margin-top: 13%;
+  }
+
+  .icon-exchange img {
+  width: 32px;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+}
