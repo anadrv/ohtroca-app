@@ -1,14 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f8f8;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: var(--font-family);
+  background: #f9f8f8;
+}
+
 .container {
   padding: 20px;
-  max-width: 500px;
+  max-width: 90%;
   margin: auto;
+  background-color: var(--bg-color);
+  margin-top: 20px;
+}
+
+.container-title {
+  color: var(--highlight-yellow);
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.label{
+  margin-top: 30px;
 }
 
 header {
@@ -35,7 +51,6 @@ h1 {
   margin: 0;
 }
 
-
 p {
   font-size: 14px;
   color: #555;
@@ -48,11 +63,12 @@ form {
 }
 
 label {
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
   margin-top: 5px;
   padding: 10px;
   border: 1px solid #aaa;
@@ -72,20 +88,22 @@ textarea {
 }
 
 .confirme-btn {
- background-color: #e5941b;
-  color: rgb(12, 12, 12);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 1px;
+  background-color: var(--highlight-yellow);
+  color: var(--black);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  padding: 10px 30px;
+  margin-top: 8px;
   cursor: pointer;
   font-size: 15px;
 }
 
 .confirme-btn:hover {
-  background-color: #e5941b;
+  background-color: var(--black);
+  color: var(--white);
 }
-
 
 .modal {
   display: none;
@@ -102,32 +120,41 @@ textarea {
 
 .modal-content {
   background: #faf7f7;
-  padding: 15px;
+  padding: 15px 30px;
   width: 90%;
-  max-width: 250px;
+  max-width: 350px;
   border-radius: 15px;
   text-align: center;
 }
 
+.modal-content h2 {
+  margin-top: 20px;
+}
+
+
 .modal-content p {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .modal-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
 }
 
 .cancel-btn {
-  background-color: #d42a24;
-  color: rgb(7, 7, 7);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
+    background-color: #c9302c;
+  color: var(--white);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  padding: 10px 30px;
+  margin-top: 8px;
   cursor: pointer;
   font-size: 15px;
 }
 
 .cancel-btn:hover {
-  background-color: #c9302c;
+  background-color: var(--black);
+  color: var(--white);
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deletar conta</title>
+    <title>Excluir conta</title>
     <link rel="stylesheet" href="/style.css"/>
     <link rel="stylesheet" href="/css/delete-account.css"/>
     <link rel="stylesheet" href="/css/header.css" />
@@ -15,22 +15,22 @@
 <body>
    <div id="header"></div>
 
-    <main>
-      <h2>Confirme sua identidade</h2>
+    <main class="container">
+      <h2 class="container-title">Confirme sua identidade</h2>
       <p>Por favor, digite sua senha para confirmar a exclusão da conta</p>
 
       <form id="deleteForm">
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha" required>
 
-        <label for="motivo">Motivo da Exclusão (opcional)</label>
+        <label for="motivo" class="label">Motivo da Exclusão (opcional)</label>
         <textarea id="motivo" name="motivo" maxlength="120"></textarea>
         <p class="char-limit">0/120</p>
 
         <button type="submit" class="confirme-btn">Confirmar</button>
       </form>
     </main>
-  </div>
+
 
   
   <div id="confirmModal" class="modal">
