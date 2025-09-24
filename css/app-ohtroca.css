@@ -19,7 +19,7 @@ body {
 
 
 .inicio h1 {
-  color: red;
+  color: var(--red);
   font-weight: bold;
   margin: 30px 0;
   margin-top: 60px;
@@ -38,7 +38,7 @@ body {
 .fim p {
   font-size: 23px;
   font-weight: bold;
-  color: red;
+  color: var(--red);
   margin: 30px 0;
   text-align: left;
 }
@@ -65,12 +65,25 @@ body {
 .botao .entrar {
   background-color: black;
   color: white;
-  border: solid 1px white;
+  
+}
+
+.botao .entrar:hover {
+  background-color: var(--medium-yellow);
+  color: var(--black);
 }
 
 .botao .criar {
   background-color: #FFC257;
-  color: white;
+  color: var(--black);
+  border: var(--border);
+
+}
+
+.botao .criar:hover {
+  background-color: var(--medium-yellow);
+  color: var(--black);
+
 }
 
 

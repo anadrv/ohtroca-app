@@ -10,7 +10,7 @@ const data = document.querySelector("#data")
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault()
-  
+
   if (nome.value === "") {
     alert("Campo vazio! Por favor, preencha seu nome")
     return
@@ -20,6 +20,18 @@ formulario.addEventListener("submit", (event) => {
     alert("Campo vazio! Por favor, preencha seu e-mail.")
     return
   }
+
+  if (!validaCPF(cpf.value)) {
+    alert("O CPF é inválido! Ele precisa conter exatamente 11 números.")
+    return
+  }
+
+
+  if (data.value === "") {
+    alert("Selecione sua data de nascimento!")
+    return
+  }
+
 
   if (cidade.value === "") {
     alert("Campo vazio! Por favor, preencha o campo cidade")
@@ -36,18 +48,8 @@ formulario.addEventListener("submit", (event) => {
     return
   }
 
-  if (!validaCPF(cpf.value)) {
-    alert("O CPF é inválido! Ele precisa conter exatamente 11 números.")
-    return
-  }
-
-  if(data.value === ""){
-    alert("Selecione sua data de nascimento!")
-    return
-  }
 
 
- 
   window.location.href = "login.html"
 })
 
