@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excluir conta</title>
-    <link rel="stylesheet" href="/style.css"/>
-    <link rel="stylesheet" href="/css/delete-account.css"/>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/delete-account.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
     <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
-    
-</head>
-<body>
-   <div id="header"></div>
+    <link
+      rel="shortcut icon"
+      href="/images/icons/page-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
 
     <main class="container">
+      <h2 class="title-page">Excluir conta</h2>
+      
       <h2 class="container-title">Confirme sua identidade</h2>
-      <p>Por favor, digite sua senha para confirmar a exclusão da conta</p>
+      <p class="container-paragraph">Por favor, digite sua senha para confirmar a exclusão da conta</p>
 
       <form id="deleteForm">
         <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" required>
+        <input type="password" id="senha" name="senha" required />
 
         <label for="motivo" class="label">Motivo da Exclusão (opcional)</label>
         <textarea id="motivo" name="motivo" maxlength="120"></textarea>
@@ -31,30 +40,41 @@
       </form>
     </main>
 
-
-  
-  <div id="confirmModal" class="modal">
-    <div class="modal-content">
-      <h2>Atenção!</h2>
-      <p> Esta ação é permanente e apagará todos os dados associados à sua conta. Tem certeza de que deseja continuar?</p>
-      <div class="modal-actions">
-        <button id="cancelDelete" class="cancel-btn">Cancelar</button>
-        <button id="confirmDelete" class="confirme-btn">Confirmar</button>
+    <div id="confirmModal" class="modal">
+      <div class="modal-content">
+        <h2>Atenção!</h2>
+        <p>
+          Esta ação é permanente e apagará todos os dados associados à sua
+          conta. Tem certeza de que deseja continuar?
+        </p>
+        <div class="modal-actions">
+          <button id="cancelDelete" class="cancel-btn">Cancelar</button>
+          <button id="confirmDelete" class="confirme-btn">Confirmar</button>
+        </div>
       </div>
     </div>
-  </div> 
 
-<div id="menu"></div>
 
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel" src="/js/header.js"></script>
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
 
-  <script type="text/babel" src="../js/menu.js"></script>
-  <script src="../js/delete-account.js"></script>
-  <script type="text/babel" src="../js/menu-desktop.js"></script>
-  <script type="text/babel" src="../js/notifications-desktop.js"></script>
-  <script src="delete-account.js"></script> 
-</body>
+    <div id="menu"></div>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="/js/header.js"></script>
+
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script src="../js/delete-account.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+    <script src="delete-account.js"></script>
+  </body>
 </html>

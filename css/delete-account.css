@@ -9,6 +9,10 @@ body {
   background: #f9f8f8;
 }
 
+#menu-desktop, #notifications-desktop, .title-page {
+    display: none;
+}
+
 .container {
   padding: 20px;
   max-width: 90%;
@@ -51,7 +55,7 @@ h1 {
   margin: 0;
 }
 
-p {
+.container-paragraph {
   font-size: 14px;
   color: #555;
 }
@@ -157,4 +161,52 @@ textarea {
 .cancel-btn:hover {
   background-color: var(--black);
   color: var(--white);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+  body {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  #header,
+  #menu {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+
+  .container {
+    margin-left: 30%;
+    width: 45%;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  #notifications-desktop {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 24%;
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+ .title-page {
+    display: block;
+    margin-top: 13%;
+    margin-bottom: 50px;
+  }
 }
