@@ -7,7 +7,6 @@ body {
 .container {
   max-width: 550px;
   margin: 15px auto;
-  background: #ffffff;
   padding: 30px;
   border-radius: 15px;
 }
@@ -17,12 +16,22 @@ h2 {
   color: #030303;
 }
 
-.title-page{
-    background-color: #f0b21a;
+.general {
+
+  margin-bottom: 16px;
+  color: var(--highlight-yellow);
+  font-size: 1.4rem;
+
 }
+
+.observacoes {
+  margin-top: 20px;
+}
+
 
 .field {
   margin-bottom: 15px;
+  
 }
 
 label {
@@ -37,6 +46,8 @@ input, textarea, select {
   border: 1px solid #aeabab;
   border-radius: 10px;
   box-sizing: border-box;
+  background-color: var(--white);
+
 }
 
 textarea {
@@ -81,4 +92,53 @@ small {
 
 .btn-salvar:hover {
   background: #c09016;
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+  body {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  #header,
+  #menu {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: block;
+    width: 24%;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+  }
+
+  .container {
+    margin-left: 30%;
+    width: 45%;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  #notifications-desktop {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 24%;
+    height: 100vh;
+    margin-right: 20px;
+  }
+
+ .title-page {
+    display: block;
+    margin-top: 13%;
+
+  }
 }
