@@ -15,7 +15,7 @@ function MenuDesktop() {
           >Buscar item<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
-        <a href=""
+        <a href="./add-item.html"
           >Adicionar item<span
             ><img src="/images/icons/arrow-right.png" alt="" /></span></a>
 
