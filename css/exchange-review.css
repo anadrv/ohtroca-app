@@ -26,23 +26,16 @@
 }
 
 .btn-options-exchange:hover {
-    all: unset;
-    background-color: var(--highlight-yellow);
-    width: 90%;
-    padding: 12px;
-    border-radius: var(--border-radius);
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    font-weight: bold;
 
+    background-color: var(--black);
+    color: var(--white);
 }
 
 #comment {
     width: 95%;
     height: 100px;
     border-radius: var(--border-radius);
-    
+
 }
 
 .comment-paragraph {
