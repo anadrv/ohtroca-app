@@ -9,14 +9,14 @@ body {
   gap: 20px;
 }
 
-.cabeçalho header {
+.cabecalho header {
   flex: 0 0 auto;
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.cabeçalho img {
-  width: 25px;
+.cabecalho img {
+  width: 30px;
 }
 
 .campos {
@@ -122,14 +122,14 @@ body {
     background-color: white;
   }
 
-  .cabeçalho {
+  .cabecalho {
     display: flex;
     justify-content: flex-end;
     padding: 20px 50px;
   }
 
-  .cabeçalho img {
-    width: 70px;
+  .cabecalho img {
+    width:40px;
     margin-top: 1px;
     margin-left: 180px;
   }
@@ -139,12 +139,11 @@ body {
     border: var(--border);
     box-shadow: var(--box-shadow);
     border-radius: 20px;
-
     max-width: 700px;
-    height: 800px;
-    margin: 60px auto;
-    padding: 60px 80px;
-    margin-top: -20px;
+    min-height: 700px;
+    margin: 40px auto;
+    padding: 0 80px;
+    margin-top: -80px;
   }
 
   .campos .titulo {
@@ -185,16 +184,7 @@ body {
     margin-left: 5px;
   }
 
-  .pergunta {
-    padding-top: -50px;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .pergunta a {
-    color: black;
-    font-weight: bold;
-  }
+  
   #formulario .confirmar {
     width: 90%;
     margin: 0 auto;
