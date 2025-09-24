@@ -24,33 +24,34 @@
     <div id="menu-desktop"></div>
 
     <div class="container">
-        <h2 class="title-page">Excluir conta</h2>
+        <h2 class="title-page">Adicionar item</h2>
       <h3 class="general">Geral</h3>
+      <p class="required">*Campos obrigatórios</p>
       <form id="itemForm">
         <div class="field">
-          <label for="nome">Nome do brinquedo </label>
+          <label for="nome">Nome do brinquedo*</label>
           <input type="text" id="nome" />
         </div>
 
         <div class="field">
-          <label for="descricao">Descrição </label>
+          <label for="descricao">Descrição*</label>
           <textarea id="descricao" required maxlength="200"></textarea>
           <small id="contador">0/200</small>
         </div>
 
         <div class="field">
-          <label for="imagens">Adicionar imagem (0/5)</label>
+          <label for="imagens">Adicionar imagem (0/5)*</label>
           <input type="file" id="imagens" accept="image/*" multiple />
           <div id="preview"></div>
         </div>
 
         <div class="row">
           <div class="col">
-            <label for="ano">Ano</label>
+            <label for="ano">Ano*</label>
             <input type="number" id="ano" />
           </div>
           <div class="col">
-            <label for="condicao">Condição</label>
+            <label for="condicao">Condição*</label>
             <select id="condicao">
               <option value="">Selecione</option>
               <option value="novo">Novo</option>
@@ -62,13 +63,19 @@
 
         <div class="field">
           <label for="observacoes" class="observacoes"
+            >Nome da coleção*</label
+          >
+          <input type="text" id="observacoes" />
+        </div>
+        <div class="field">
+          <label for="observacoes" class="observacoes"
             >Observações e Tags</label
           >
           <input type="text" id="observacoes" />
         </div>
 
         <div class="field">
-          <label for="categorias">Adicionar categoria (0/5)</label>
+          <label for="categorias">Adicionar outra categoria (0/5)</label>
           <input type="text" id="categorias" />
         </div>
 

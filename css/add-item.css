@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+#menu-desktop,
+#notifications-desktop, .title-page {
+  display: none;
+}
 .container {
   max-width: 550px;
   margin: 15px auto;
@@ -67,6 +71,11 @@ small {
   gap: 15px;
 }
 
+.required {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
 .col {
   flex: 1;
 }
@@ -82,16 +91,19 @@ small {
 .btn-salvar {
   width: 100%;
   padding: 15px;
-  background: #f0b21a;
-  border: none;
+  background: var(--highlight-yellow);
+  border: var(--border);
   color: #090909;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-salvar:hover {
-  background: #c09016;
+  background: var(--black);
+  color: var(--white);
 }
 
 
