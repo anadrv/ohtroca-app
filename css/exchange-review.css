@@ -1,0 +1,123 @@
+.exchange-review {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.btn-options-exchange {
+    all: unset;
+    background-color: var(--highlight-yellow);
+    width: 90%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#menu-desktop,
+#notifications-desktop,
+.title-page {
+    display: none;
+}
+
+.btn-options-exchange:hover {
+    all: unset;
+    background-color: var(--highlight-yellow);
+    width: 90%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#comment {
+    width: 95%;
+    height: 100px;
+    border-radius: var(--border-radius);
+    
+}
+
+.comment-paragraph {
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+
+.comment {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.stars-review {
+    margin-bottom: 10px;
+    font-size: 1.5rem
+}
+
+
+.fa-star {
+    font-size: 20px;
+    cursor: pointer;
+    color: #535353;
+}
+
+.fa-star.selected {
+    color: gold;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+
+    body {
+        display: flex;
+        gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    #header,
+    #menu,
+    .title-page {
+        display: none;
+    }
+
+    #menu-desktop {
+        display: block;
+        width: 24%;
+        flex-shrink: 0;
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+    }
+
+    .exchange-review {
+        margin-left: 30%;
+        width: 45%;
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    #notifications-desktop {
+        display: block;
+        position: fixed;
+        right: 0;
+        width: 24%;
+        height: 100vh;
+        margin-right: 20px;
+    }
+
+    .title-page {
+        display: block;
+        margin-top: 13%;
+    }
+
+}

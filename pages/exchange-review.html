@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliar troca</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/menu-desktop.css" />
+    <link rel="stylesheet" href="/css/notifications-desktop.css" />
+    <link rel="stylesheet" href="/css/main-page.css" />
+    <link rel="stylesheet" href="/css/request-exchange.css" />
+    <link rel="stylesheet" href="/css/exchange-review.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div id="header"></div>
+
+    <!--MENU DESKTOP-->
+    <div id="menu-desktop"></div>
+
+    <!--REVIEWS-->
+
+    <section class="exchange-review">
+    <h2 class="title-page">Avaliar troca</h2>
+      
+     <div class="items-container">
+
+            <div class="card">
+              <img
+                src="/images/items/snoopy-img.png"
+                alt="Snoopy"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Snoopy</h3>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="icon-exchange">
+                <img src="/images/icons/icon-exchange.png" alt="">
+            </div>
+
+            <div class="card">
+              <img
+                src="/images/items/pikachu-img.png"
+                alt="Pikachu"
+              />
+              <div class="info">
+                <div class="texto">
+                  <h3>Pikachu</h3>
+                </div>
+                <button class="fav">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="details">
+          <h2 class="stars-review">Com quantas estrelas deseja avaliar?</h2>
+          <div class="star-5">
+              <div class="fa-regular fa-star"></div>
+              <div class="fa-regular fa-star"></div>
+              <div class="fa-regular fa-star"></div>
+              <div class="fa-regular fa-star"></div>
+              <div class="fa-regular fa-star"></div>
+          </div>
+        </div>
+
+        <div class="review-section">
+          
+          <label for="comment" class="comment">Comentário</label>
+          <p class="comment-paragraph">*Conte como foi sua experiência com a troca e o
+ colecionador </p>
+          <textarea id="comment" required maxlength="200"></textarea>
+        </div>
+
+        <div class="options-show__btn">
+          <button class="btn-options-exchange">Avaliar troca</button>
+          <div class="line"></div>
+        </div>
+
+ 
+    </section>
+
+    <!--NOTIFICATIONS BAR-->
+    <div id="notifications-desktop"></div>
+
+    <!--MENU-->
+    <div id="menu"></div>
+
+    <!--REACT-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+  const stars = document.querySelectorAll(".fa-star");
+
+  stars.forEach((star, index) => {
+    star.addEventListener("click", () => {
+ 
+      stars.forEach(s => {
+        s.classList.remove("fa-solid", "selected");
+        s.classList.add("fa-regular");
+      });
+
+
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.remove("fa-regular");
+        stars[i].classList.add("fa-solid", "selected");
+      }
+    });
+  });
+</script>
+
+    <!--SCRIPTS-->
+    <script type="text/babel" src="../js/header.js"></script>
+    <script type="text/babel" src="../js/menu.js"></script>
+    <script type="text/babel" src="../js/menu-desktop.js"></script>
+    <script type="text/babel" src="../js/notifications-desktop.js"></script>
+  </body>
+</html>
