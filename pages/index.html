@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP OhTroca</title>
-    <link rel="stylesheet" href="/css/app-ohtroca.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP OhTroca</title>
+  <link rel="stylesheet" href="/css/app-ohtroca.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/images/icons/page-icon.png" type="image/x-icon">
 </head>
+
 <body>
   <div class="container">
 
-   
+
     <div class="coluna esquerda">
       <div class="inicio">
         <h1><strong>Bem-vindo(a)!</strong></h1>
       </div>
-      
+
       <div class="corpo">
         <img src="/images/general/icon-app.png" alt="Logo OhTroca">
       </div>
-      
+
       <h2 class="marca">OhTroca</h2>
     </div>
 
-    
+
     <div class="coluna direita">
       <div class="fim">
         <p><strong>Troque,<br>Colecione &<br>Complete sua coleção</strong></p>
       </div>
-      
+
       <div class="botao">
         <button class="entrar" onclick="window.location.href='login.html'">Entrar</button>
-        <button class="criar"  onclick="window.location.href='termos.html'">Criar Conta</button>
+        <button class="criar" id="abrirModal">Criar Conta</button>
       </div>
     </div>
 
   </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-conteudo">
+      <div class="aviso">
+        <img src="/images/icons/icon-termos.png" alt="">
+        <p>
+          Ao continuar, você concorda com os <br>
+          <a href="terms-privacy.html" class="sublinhado"><strong>Termos de usos</strong></a>
+          e a
+          <a href="terms-privacy.html" class="sublinhado"><strong>Política de privacidade</strong></a>.
+        </p>
+      </div>
+
+      <div class="butao">
+        <button class="continue" id="continuar" onclick="window.location.href='cadastro.html'">Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/troca.js"></script>
+
 </body>
+
 </html>
