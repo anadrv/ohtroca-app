@@ -1,236 +1,203 @@
-
 body {
-    background-color: #f8f0e3;
-    font-family: 'Instrument Sans', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
+  background-color: #f8f0e3;
+  font-family: "Instrument Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
 
 .cabeçalho header {
-    
-    flex: 0 0 auto;
-    margin-left: 20px;
-    margin-top: 10px;
-    
+  flex: 0 0 auto;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
-.cabeçalho img{
-    width: 25px;
+.cabeçalho img {
+  width: 25px;
 }
-
 
 .campos {
-    flex: 1 0 auto;        
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding-top: 50px;     
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-
-    background-color: #F8F8F8;
-    width: 100%;
-    border-radius: 30px;
-    box-shadow: none;
-    border: none;
-    border-top: solid 2px black;
-    box-sizing: border-box;
-    
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: #f8f8f8;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: none;
+  border: none;
+  border-top: solid 2px black;
+  box-sizing: border-box;
 }
 
-
-.campos .titulo {
-    margin: 0 0 20px 0;
-    font-weight: bolder;
-    font-size: 28px;
-    margin-left: -190px;
+.titulo {
+  margin-left: 20px;
+  width: 90%;
+  text-align: left;
+  margin-bottom: 20px;
 }
-
-
 #formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin-left: 30px;
 }
 
 #formulario input,
 #formulario select {
-    padding: 12px;          
-    font-size: 16px;       
-    border: 1px solid #ccc; 
-    border-radius: 8px;     
-    width: 90%;   
-    box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 #formulario button {
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 2px 3px 0px black;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-top: 10px;
-    width: 300px;
-    margin-left: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  margin-top: 10px;
+  width: 300px;
 }
 
 #formulario .confirmar {
-    background-color: #FFC257;
-    border: 1px solid black;
+  background-color: #ffc257;
+  border: var(--border);
+  display: block;
+  width: 90%;
 }
 
+#formulario .confirmar:hover {
+  background-color: var(--black);
+  color: white;
+}
 
 .campo-cidade-estado {
-    display: flex;
-    gap: 10px;
-    width: 100%;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
 .campo-cidade-estado div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-#formulario .campo-cidade-estado > div:first-child { 
-    flex: 0.5;
+#formulario .campo-cidade-estado > div:first-child {
+  flex: 0.5;
 }
 
-#formulario .campo-cidade-estado > div:last-child { 
-     flex: 0.45;
-     margin-left: -15px;
-     
+#formulario .campo-cidade-estado > div:last-child {
+  flex: 0.45;
+  margin-left: -15px;
 }
 
-.campos .pergunta {
-    margin-top: 30px;
-    font-size: 14px;
-
+.pergunta {
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 .pergunta a {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
-
 /* --- Desktop --- */
-@media (min-width: 768px) {
-    
-    body {
-        background-color: white;
-    }
+@media (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
 
-    
-    .cabeçalho {
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px 50px;
-    }
+  .cabeçalho {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 50px;
+  }
 
-    .cabeçalho img {
-        width: 70px;
-        margin-top: 1px;
-        margin-left: 180px;
-    }
+  .cabeçalho img {
+    width: 70px;
+    margin-top: 1px;
+    margin-left: 180px;
+  }
 
-    
-    .campos {
-        background-color: #FDEEDC; 
-        border: 2px solid black;
-        border-radius: 20px;
-        box-shadow: 2px 3px 6px rgba(0,0,0,0.9);
+  .campos {
+    background-color: #fdeedc;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
 
-        max-width: 700px;
-        height: 800px;
-        margin: 60px auto;  
-        padding: 60px 190px;
-        margin-top: -20px;
-        
-    }
+    max-width: 700px;
+    height: 800px;
+    margin: 60px auto;
+    padding: 60px 80px;
+    margin-top: -20px;
+  }
 
-    .campos .titulo {
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0 0 20px 0;
-        align-self: flex-start;
-        margin-top: 50px;
-    }
+  .campos .titulo {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
 
-    
-    #formulario {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin: 0;
-       
-    }
+  #formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
 
-    #formulario input,
-    #formulario select {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
+  #formulario input,
+  #formulario select {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
 
-    
-    #formulario .campo-cidade-estado {
-        display: flex;
-        gap: 30px;
-        width: 100%;
-        margin-top: 5px;
-    }
+  #formulario .campo-cidade-estado {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    margin-top: 5px;
+  }
 
-    #formulario .campo-cidade-estado > div {
-        flex: 1;
-        margin-left: 5px;
-        
-    }
+  #formulario .campo-cidade-estado > div {
+    flex: 1;
+    margin-left: 5px;
+  }
 
-    
-    .campos button {
-        width: 100%;
-        background-color: #FFC257;
-        border: 1px solid black;
-        padding: 12px;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 2px 3px 0px black;
-        margin-top: 15px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+  .pergunta {
+    padding-top: -50px;
+    font-size: 14px;
+    text-align: center;
+  }
 
-    .campos button:hover {
-        transform: translateY(-4px);
-    }
-
-    
-    .pergunta {
-        padding-top: -50px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .pergunta a {
-        color: black;
-        font-weight: bold;
-    }
+  .pergunta a {
+    color: black;
+    font-weight: bold;
+  }
+  #formulario .confirmar {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
