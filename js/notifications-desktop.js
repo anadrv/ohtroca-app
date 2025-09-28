@@ -3,7 +3,7 @@ function Notifications() {
         <>
           <div className="see-profile">
             <a className="see-profile__name" href="./main-profile.html">Ver perfil</a>
-            <img src="/images/general/perfil-ode-img.png" alt="Perfil" className="see-profile__img" />
+            <img src="../images/general/perfil-ode-img.png" alt="Perfil" className="see-profile__img" />
           </div>
 
           <div className="notifications">
