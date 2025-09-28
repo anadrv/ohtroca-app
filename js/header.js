@@ -8,14 +8,14 @@ function Header() {
           className="header__btn"
           onClick={() => window.history.back()} 
         aria-label="Voltar para a página anterior">
-          <img src="/images/icons/arrow-left.png" alt="Voltar" />
+          <img src="../images/icons/arrow-left.png" alt="Voltar" />
         </button>
 
         <h1 className="header__title">{title}</h1>
 
         <a href="./main-profile.html">
           <img
-            src="/images/general/perfil-ode-img.png"
+            src="../images/general/perfil-ode-img.png"
             alt="Perfil"
             className="header__profile"
           />
