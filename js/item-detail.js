@@ -1,7 +1,7 @@
 const images = {
-  main: "/images/items/jhope-detail-img.png",
-  size: "/images/items/jungsu-desktop-im1.png",
-  box: "/images/items/jungsu-desktop-img2.png",
+  main: "../images/items/jhope-detail-img.png",
+  size: "../images/items/jungsu-desktop-im1.png",
+  box: "../images/items/jungsu-desktop-img2.png",
   mainDetail: "/images/items/jhope-detail-img.png"
 };
 
